@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/*応募フォームへのフォントカーソルのせた時*/
+
+.custom-btn-go-font:hover {
+    color: #ffffff;
+}
+
+
+/*応募内容を確認ボタンのフォント*/
+
+.custom-btn-form-font,
+.custom-btn-form-font:hover {
+    color: #ffffff;
+}
+
+
+/*応募フォームへのフォント*/
+
+.custom-btn-go-font,
+.custom-btn-go-font:hover {
+    color: #ffffff;
+}
+
+
+/*応募内容を確認ボタンのフォントへカーソルを乗せた時*/
+
+.custom-btn-form-font:hover {
+    color: #ffffff;
+}
+
+
+/*応募内容を確認ボタン背景*/
+
+.custom-btn-form-bg {
+    background: #d0111b;
+}
+
+
+/*応募内容を確認ボタンの影*/
+
+.custom-btn-form-shadow {
+    -moz-box-shadow: 0 4px 0 0 #ba0913;
+    -webkit-box-shadow: 0 4px 0 0 #ba0913;
+    box-shadow: 0 4px 0 0 #ba0913;
+}
+
+.custom-btn-ret-form-font {
+    color: #d0111b;
+}
+
+.custom-btn-ret-form-bg {
+    background: #ffffff !important;
+    border: 1px solid #d0111b;
+    box-shadow: 0 4px 0 0 #ba0913;
+    display: flex;
+    justify-content: center;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
+    height: 45px;
+    padding: 3px 10px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    /*-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;*/
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}

@@ -1,0 +1,44 @@
+{
+  "datas": [
+    {
+      "value": "",
+      "title": "",
+      "kind": ""
+    },
+    {
+      "value": "1",
+      "title": "青バナナ引取合計表",
+      "kind": "kind = '1'"
+    },
+    {
+      "value": "2",
+      "title": "アボカド加工合計表",
+      "kind": "kind = '2'"
+    },
+    {
+      "value": "3",
+      "title": "青バナナ・アボカド加工合計表",
+      "kind": "(kind = '1' or kind = '2' )"
+    },
+    {
+      "value": "4",
+      "title": "色バナナ引取合計表",
+      "kind": "kind = '10'"
+    },
+    {
+      "value": "5",
+      "title": "青バナナ・色バナナ引取合計表",
+      "kind": "(kind = '1' or kind = '10')"
+    },
+    {
+      "value": "6",
+      "title": "その他引取合計表",
+      "kind": "(kind != '1' and kind != '2' and kind != '10' and kind != '11')"
+    },
+    {
+      "value": "7",
+      "title": "引取総合計表",
+      "kind": "kind != '11'"
+    }
+  ]
+}
