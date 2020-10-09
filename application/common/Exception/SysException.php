@@ -1,7 +1,8 @@
 <?php
 
 // 错误日志路径
-$GLOBALS['error_log_path'] = '/data/vhosts/1/logs/php_error.log';
+//$GLOBALS['error_log_path'] = '/data/vhosts/1/logs/php_error.log';
+$GLOBALS['error_log_path'] = 'C:\Apache24\htdocs\hepa-camphack\logs\php_error.log';
 
 /**
  * カスタマイズシステム異常

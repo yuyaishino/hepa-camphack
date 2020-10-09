@@ -81,7 +81,13 @@ try{
         . '<a href="' .$url . '">・仮登録メールの新規登録用ログイン画面のＵＲＬからログインし、本登録を完了してください</a><br>'
         . '1時間以内に本登録してください。';
     $status = $mailer->sendOne( $_SESSION['temp_email'] ,$body,'まだ仮登録です');
-
+    
+    $before = date('Y-m-d H:i:s', $_SESSION['beforeTime'][0]) . '.' .$_SESSION['beforeTime'][1];
+    $after = date('Y-m-d H:i:s', $_SESSION['afterTime'][0]) . '.' .$_SESSION['afterTime'][1];
+    $filename = 'C:\Apache24\htdocs\hepa-camphack\logs\php_time.log';
+    $outputString = $before . "\n" .$after;
+    //中身をファイルに書き出します。
+    file_put_contents($filename, $outputString, FILE_APPEND | LOCK_EX);
 
     $response = array();
     // 清空 SESSION 中保存的临时用户信息

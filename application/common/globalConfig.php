@@ -19,8 +19,8 @@ $user='hepa2020';
 $password='hepacmptest';
 
 //--------------------
-$GLOBALS['error_log_path'] = '/data/vhosts/1/logs/php_error.log';
-
+//$GLOBALS['error_log_path'] = '/data/vhosts/1/logs/php_error.log';
+$GLOBALS['error_log_path'] = 'C:\Apache24\htdocs\hepa-camphack\logs\php_error.log';
 $api_url = $http_base . $request_path;
 
 

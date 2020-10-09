@@ -68,7 +68,13 @@ class Mailer
         self::$mail->addAddress($address);
         self::$mail->Subject = $subject;
         self::$mail->Body = $body;
+        //送信直前の時間を計測
+        $beforeTime = explode('.',microtime(true));
+        $_SESSION['beforeTime'] = $beforeTime;
         $status = self::$mail->send();
+        //送信直後の時間を計測
+        $aftertime = explode('.',microtime(true));
+        $_SESSION['afterTime'] = $aftertime;
         if(!$status){
             error_log(self::$mail ->ErrorInfo . "\n",3,$GLOBALS['error_log_path']);
         }
