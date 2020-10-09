@@ -205,7 +205,7 @@ function checkAddPostMainData($params){
 	if(CommonTool::isNullOREmpty($params['postcode'])){
 		throw new SysException('I0006', '', '');
 	}
-	if(!CommonTool::isHalfAngle($params['postcode']) || strlen($params['postcode'])>7){
+	if(!CommonTool::isHalfAngle($params['postcode']) || strlen($params['postcode'])!=7){
 		throw new SysException('I0006', '', '');
 	}
 	if(CommonTool::isNullOREmpty($params['address1'])){

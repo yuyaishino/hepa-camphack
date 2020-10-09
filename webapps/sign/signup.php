@@ -149,14 +149,6 @@ require_once("../../application/common/db/sessioninit.php");
             $('.error').html(str);
         }
 
-        $(function () {
-            handlePasswordInput('password-show','password');
-            handlePasswordInput('re-password-show','re-password');
-        })
-
-
-
-
 
     </script>
     <script src="../../public/js/common.js"></script>
@@ -187,17 +179,11 @@ require_once("../../application/common/db/sessioninit.php");
                                    value="<?= array_key_exists('temp_email', $_SESSION) ? $_SESSION['temp_email'] : '' ?>">
                         </dd>
                         <dt>パスワード</dt>
-                        <dd><input id="password-show" type="text"  class="add"
-                                   value="<?= array_key_exists('temp_password', $_SESSION) ? $_SESSION['temp_password'] : '' ?>">
-                            <input id="password" name="password" style="display: none" type="text" class="add"
+                        <dd><input id="password" name="password" type="password" class="add"
                                    value="<?= array_key_exists('temp_password', $_SESSION) ? $_SESSION['temp_password'] : '' ?>">
                         </dd>
                         <dt>パスワード（確認用）</dt>
-                        <dd>
-                            <input id="re-password-show" type="text" class="add"
-                                   value="<?= array_key_exists('temp_password', $_SESSION) ? $_SESSION['temp_password'] : '' ?>">
-                            <input id="re-password" type="text" class="add"
-                                   style="display: none"
+                        <dd><input id="re-password" type="password" class="add"
                                    value="<?= array_key_exists('temp_password', $_SESSION) ? $_SESSION['temp_password'] : '' ?>">
                         </dd>
                         <dt>氏名</dt>

@@ -81,7 +81,8 @@ require_once("../../application/common/db/dbini.php");
                             case '0':
                                 var typeData = {
                                     typeStr:'A賞',
-                                    time:data.prizeList[i].time
+                                    time:data.prizeList[i].time,
+                                    apply_count: data.prizeList[i].apply_count
                                 };
                                 dataArray[0].push(typeData);
                                 break;
@@ -89,28 +90,32 @@ require_once("../../application/common/db/dbini.php");
                                 var typeData = {
                                     typeStr:'B賞',
                                     time:data.prizeList[i].time,
-                                    color:data.prizeList[i].color
+                                    color:data.prizeList[i].color,
+                                    apply_count: data.prizeList[i].apply_count
                                 }
                                 dataArray[1].push(typeData);
                                 break;
                             case '2':
                                 var typeData = {
                                     typeStr:'C賞',
-                                    time:data.prizeList[i].time
+                                    time:data.prizeList[i].time,
+                                    apply_count: data.prizeList[i].apply_count
                                 };
                                 dataArray[2].push(typeData);
                                 break;
                             case '3':
                                 var typeData = {
                                     typeStr:'D賞',
-                                    time:data.prizeList[i].time
+                                    time:data.prizeList[i].time,
+                                    apply_count: data.prizeList[i].apply_count
                                 };
                                 dataArray[3].push(typeData);
                                 break;
                             case '4':
                                 var typeData = {
                                     typeStr:'E賞',
-                                    time:data.prizeList[i].time
+                                    time:data.prizeList[i].time,
+                                    apply_count: data.prizeList[i].apply_count
                                 };
                                 dataArray[4].push(typeData);
                                 break;
@@ -123,8 +128,10 @@ require_once("../../application/common/db/dbini.php");
                     var html ='';
                     if(dataArray[0].length > 0){
                         for(var i = 0 ; i < dataArray[0].length; i++){
-                            html += '<dt>' + dataArray[0][i].typeStr + '</dt>' +
-                                '<dd>' + dataArray[0][i].time + '</dd>';
+                            for(var j = 0 ;  j < dataArray[0][i].apply_count; j++){
+                                html += '<dt>' + dataArray[0][i].typeStr + '</dt>' +
+                                    '<dd>' + dataArray[0][i].time + '</dd>';
+                            }
                         }
                     } else {
                         html = '<dt>A賞</dt>' +
@@ -136,16 +143,18 @@ require_once("../../application/common/db/dbini.php");
                     html ='';
                     if(dataArray[1].length > 0){
                         for(var i = 0 ; i < dataArray[1].length; i++){
-                            if(dataArray[1][i].color == 1){
-                                html += ' <dt>B賞</dt>\n' +
-                                    '                            <dd>' +
-                                    '                            <p>ミリタリーグリーン&nbsp;&nbsp;' + dataArray[1][i].time + '</p>\n' +
-                                    '                            </dd>';
-                            } else if (dataArray[1][i].color == 2){
-                                html += ' <dt>B賞</dt>\n' +
-                                    '                            <dd>\n' +
-                                    '                            <p>グレー&nbsp;&nbsp;' + dataArray[1][i].time + '</p>\n' +
-                                    '                            </dd>';
+                            for(var j = 0 ;  j < dataArray[1][i].apply_count; j++){
+                                if(dataArray[1][i].color == 1){
+                                    html += ' <dt>B賞</dt>\n' +
+                                        '                            <dd>' +
+                                        '                            <p>ミリタリーグリーン&nbsp;&nbsp;' + dataArray[1][i].time + '</p>\n' +
+                                        '                            </dd>';
+                                } else if (dataArray[1][i].color == 2){
+                                    html += ' <dt>B賞</dt>\n' +
+                                        '                            <dd>\n' +
+                                        '                            <p>グレー&nbsp;&nbsp;' + dataArray[1][i].time + '</p>\n' +
+                                        '                            </dd>';
+                                }
                             }
                         }
                     } else {
@@ -159,8 +168,10 @@ require_once("../../application/common/db/dbini.php");
                     html ='';
                     if(dataArray[2].length > 0){
                         for(var i = 0 ; i < dataArray[2].length; i++){
-                            html += '<dt>' + dataArray[2][i].typeStr + '</dt>' +
-                                '<dd>' + dataArray[2][i].time + '</dd>';
+                            for(var j = 0 ; j < dataArray[2][i].apply_count; j++){
+                                html += '<dt>' + dataArray[2][i].typeStr + '</dt>' +
+                                    '<dd>' + dataArray[2][i].time + '</dd>';
+                            }
                         }
                     } else {
                         html = '<dt>C賞</dt>' +
@@ -173,8 +184,10 @@ require_once("../../application/common/db/dbini.php");
                     html ='';
                     if(dataArray[3].length > 0){
                         for(var i = 0 ; i < dataArray[3].length; i++){
-                            html += '<dt>' + dataArray[3][i].typeStr + '</dt>' +
-                                '<dd>' + dataArray[3][i].time + '</dd>';
+                            for(var j = 0 ; j < dataArray[3][i].apply_count; j++){
+                                html += '<dt>' + dataArray[3][i].typeStr + '</dt>' +
+                                    '<dd>' + dataArray[3][i].time + '</dd>';
+                            }
                         }
                     } else {
                         html = '<dt>D賞</dt>' +
@@ -186,8 +199,10 @@ require_once("../../application/common/db/dbini.php");
                     html ='';
                     if(dataArray[4].length > 0){
                         for(var i = 0 ; i < dataArray[4].length; i++){
-                            html += '<dt>' + dataArray[4][i].typeStr + '</dt>' +
-                                '<dd>' + dataArray[4][i].time + '</dd>';
+                            for(var j = 0 ; j < dataArray[4][i].apply_count; j++){
+                                html += '<dt>' + dataArray[4][i].typeStr + '</dt>' +
+                                    '<dd>' + dataArray[4][i].time + '</dd>';
+                            }
                         }
                     } else {
                         html = '<dt>E賞</dt>' +

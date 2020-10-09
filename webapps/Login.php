@@ -32,10 +32,6 @@
     <script src="../public/jquery/jquery.min.js"></script>
     <script type="text/javascript">
 
-        $(function(){
-            handlePasswordInput("password-show","password");
-        })
-
         function dologin(){
             $.ajax({
                 url:'../application/Login.php',
@@ -102,8 +98,7 @@
                         <dt>ID（メールアドレス）</dt>
                         <dd><input type="text" name="id" class="add"></dd>
                         <dt>パスワード</dt>
-                        <dd><input id="password-show" type="text" class="add"></dd>
-                        <dd><input id="password" style="display: none" type="text" name="password" class="add"></dd>
+                        <dd><input id="password" type="password" name="password" class="add"></dd>
                     </dl>
                     <div class="btn-list-area">
                         <a class="btn-link btn btn-yel" onclick="dologin()" style="cursor:pointer">ログイン</a>

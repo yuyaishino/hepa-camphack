@@ -9,11 +9,6 @@ function goGrant(){
 }
 $(function() {
 
-
-	handlePasswordInput("cpassword-show","cpassword")
-
-	handlePasswordInput("npassword-show","npassword");
-
 	searchData();
 	$("#pword_change").click(function(){
 		if(changeUserflag){

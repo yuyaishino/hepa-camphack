@@ -91,11 +91,6 @@
             $('.error').show();
         }
 
-        $(function(){
-            handlePasswordInput("password-show","password");
-        })
-
-
     </script>
 
 </head>
@@ -129,8 +124,8 @@
                         <dt>ID（メールアドレス）</dt>
                         <dd><input name="email" type="text" class="add"></dd>
                         <dt>パスワード</dt>
-                        <dd><input id="password-show" type="text" class="add">
-                            <input id="password" style="display: none" name="password" type="text" class="add">
+                        <dd>
+                            <input id="password" name="password" type="password" class="add">
                         </dd>
                     </dl>
                     <div class="btn-list-area">

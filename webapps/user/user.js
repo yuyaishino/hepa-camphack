@@ -185,8 +185,13 @@ function checkDate(updateData){
 		showPop(checkErrorMessage);
 		return false;
 	}
-	
-	if(!isHalfAngle(updateData.postcode) || updateData.postcode.length>7){
+	if(isNullOrEmpty(updateData.postcode)){
+		changeUserflag = true;
+		checkErrorMessage = getMessage('Message.I0006');
+		showPop(checkErrorMessage);
+		return false;
+	}
+	if(!isHalfAngle(updateData.postcode) || updateData.postcode.length != 7){
 		changeUserflag = true;
 		checkErrorMessage = getMessage('Message.I0006');
 		showPop(checkErrorMessage);

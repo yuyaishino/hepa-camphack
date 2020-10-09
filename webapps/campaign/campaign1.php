@@ -69,7 +69,7 @@ if(isset($_SESSION['isRecruit']) && $_SESSION['isRecruit'] == "point"){
           <div class="image"><img src="../../public/img/pfreebie-a.png" alt="[DOD] キノコテント"></div>
           <div class="name">[DOD] キノコテント</div>
           <div class="point">20ポイント/1口</div>
-          <div>数量：<input type="text" id="a_count" data_type="a" value="0" oninput="value=(value.replace(/\D/g,'')==''?'':parseInt(value))" maxlength=10> 
+          <div>数量：<input type="text" id="a_count" data_type="a" value="0" oninput="value=(value.replace(/\D/g,'')==''?'':parseInt(value))" maxlength="10"> 
           <input type="button" name="buttons" id="a_add_button" data_type="a" value="＋"> 
           <input type="button" name="buttons" id="a_cut_button" data_type="a" value="－"></div>
         </div>
@@ -78,10 +78,10 @@ if(isset($_SESSION['isRecruit']) && $_SESSION['isRecruit'] == "point"){
           <div class="image"><img src="../../public/img/pfreebie-b.png" alt="[Oregonian Camper] YAVIN 53（ツールボックス）"></div>
           <div class="name">[Oregonian Camper] YAVIN 53（ツールボックス）</div>
           <div class="point">15ポイント/1口</div>
-          <div>数量：<input type="text" id="b_count1" data_type="b" color_type="1" value="0" oninput="value=(value.replace(/\D/g,'')==''?'':parseInt(value))" maxlength=10> 
+          <div>数量：<input type="text" id="b_count1" data_type="b" color_type="1" value="0" oninput="value=(value.replace(/\D/g,'')==''?'':parseInt(value))" maxlength="10"> 
           <input type="button" name="buttons" id="b_add_button1" data_type="b" color_type="1" value="＋"> 
           <input type="button" name="buttons" id="b_cut_button1" data_type="b" color_type="1" value="－"> ミリタリーグリーン</div>
-          <div>数量：<input type="text" id="b_count2" data_type="b" color_type="2" value="0" oninput="value=(value.replace(/\D/g,'')==''?'':parseInt(value))" maxlength=10>
+          <div>数量：<input type="text" id="b_count2" data_type="b" color_type="2" value="0" oninput="value=(value.replace(/\D/g,'')==''?'':parseInt(value))" maxlength="10">
           <input type="button" name="buttons" id="b_add_button2" data_type="b" color_type="2" value="＋"> 
           <input type="button" name="buttons" id="b_cut_button2" data_type="b" color_type="2" value="－"> グレー</div>
         </div>
@@ -90,7 +90,7 @@ if(isset($_SESSION['isRecruit']) && $_SESSION['isRecruit'] == "point"){
           <div class="image"><img src="../../public/img/pfreebie-c.png" alt="[DOD] うさサンドメーカー"></div>
           <div class="name">[DOD] うさサンドメーカー</div>
           <div class="point">10ポイント/1口</div>
-          <div>数量：<input type="text" id="c_count" data_type="c" value="0" oninput="value=(value.replace(/\D/g,'')==''?'':parseInt(value))" maxlength=10>
+          <div>数量：<input type="text" id="c_count" data_type="c" value="0" oninput="value=(value.replace(/\D/g,'')==''?'':parseInt(value))" maxlength="10">
           <input type="button" name="buttons" id="c_add_button" data_type="c" value="＋"> 
           <input type="button" name="buttons" id="c_cut_button" data_type="c" value="－"></div>
         </div>
@@ -99,7 +99,7 @@ if(isset($_SESSION['isRecruit']) && $_SESSION['isRecruit'] == "point"){
           <div class="image"><img src="../../public/img/pfreebie-d.png" alt="[キャプテンスタッグ] CAMP HACKロゴ入りオリジナルシェラカップ"></div>
           <div class="name">[キャプテンスタッグ] CAMP HACKロゴ入りオリジナルシェラカップ</div>
           <div class="point">2ポイント/1口</div>
-          <div>数量：<input type="text" id="d_count" data_type="d" value="0" oninput="value=(value.replace(/\D/g,'')==''?'':parseInt(value))" maxlength=10>
+          <div>数量：<input type="text" id="d_count" data_type="d" value="0" oninput="value=(value.replace(/\D/g,'')==''?'':parseInt(value))" maxlength="10">
           <input type="button" name="buttons" id="d_add_button" data_type="d" value="＋"> 
           <input type="button" name="buttons" id="d_cut_button" data_type="d" value="－"></div>
         </div>
@@ -108,7 +108,7 @@ if(isset($_SESSION['isRecruit']) && $_SESSION['isRecruit'] == "point"){
           <div class="image"><img src="../../public/img/pfreebie-e.png" alt="ヘパリーゼW粒 引換券"></div>
           <div class="name">ヘパリーゼW粒 引換券</div>
           <div class="point">1ポイント/1口</div>
-          <div>数量：<input type="text" id="e_count" data_type="e" value="0" oninput="value=(value.replace(/\D/g,'')==''?'':parseInt(value))" maxlength=10>
+          <div>数量：<input type="text" id="e_count" data_type="e" value="0" oninput="value=(value.replace(/\D/g,'')==''?'':parseInt(value))" maxlength="10">
           <input type="button" name="buttons" id="e_add_button" data_type="e" value="＋"> 
           <input type="button" name="buttons" id="e_cut_button" data_type="e" value="－">
           </div>

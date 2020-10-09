@@ -63,15 +63,12 @@ require_once("../../application/common/db/dbini.php");
         <dd id="email"></dd>
         <dt>パスワード</dt>
         <dd>
-        <input type="text" id="npassword-show" >
-        <input type="text" style="display: none" id="npassword" >
-
+        <input type="password" id="npassword" >
         <input type="hidden" id="update_time" />
         </dd>
         <dt>パスワード（確認用）</dt>
         <dd>
-            <input type="text" id="cpassword-show"  >
-            <input type="text" id="cpassword" style="display: none" >
+            <input type="password" id="cpassword" >
         </dd>
       </dl>
       <div class="btn-list-area">
