@@ -229,7 +229,7 @@ require_once("../../application/common/db/dbini.php");
 <body id="top">
 <div class="wrap">
 
-    <header>
+<!--    <header>
         <div class="header-logo custom-header-bg">
             <div class="header-logo_area">
                 <a href="#"><img src="../../public/img/sebun_logoN.png" alt=""></a>
@@ -237,8 +237,10 @@ require_once("../../application/common/db/dbini.php");
         </div>
         <h1></h1>
         <img src="../../public/img/main.png" alt="">
-    </header>
-
+    </header>-->
+    <?php
+        require_once("../../webapps/common/header3.php");
+    ?>
     <div class="main-container">
         <div class="content" id="formBlock">
             <section>

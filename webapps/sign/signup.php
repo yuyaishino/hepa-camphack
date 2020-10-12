@@ -157,7 +157,7 @@ require_once("../../application/common/db/sessioninit.php");
 <body id="top">
 <div class="wrap">
 
-    <header>
+<!--    <header>
         <div class="header-logo custom-header-bg">
             <div class="header-logo_area">
                 <a href="#"><img src="../../public/img/sebun_logoN.png" alt=""></a>
@@ -165,8 +165,10 @@ require_once("../../application/common/db/sessioninit.php");
         </div>
         <h1></h1>
         <img src="../../public/img/main.png" alt="">
-    </header>
-
+    </header>-->
+    <?php
+        require_once("../../webapps/common/header3.php");
+    ?>
     <div class="main-container">
         <form action="../../application/sign/SingUp.php" method="post">
             <div class="content" id="formBlock">
@@ -176,7 +178,7 @@ require_once("../../application/common/db/sessioninit.php");
                     <dl class="user-input">
                         <dt>ID（メールアドレス）</dt>
                         <dd><input name="email" type="text" class="add"
-                                   value="<?= array_key_exists('temp_email', $_SESSION) ? $_SESSION['temp_email'] : '' ?>">
+                                   value="<?= array_key_exists('temp_email', $_SESSION) ? $_SESSION['temp_email'] : '' ?>" maxlength="254">
                         </dd>
                         <dt>パスワード</dt>
                         <dd><input id="password" name="password" type="password" class="add"

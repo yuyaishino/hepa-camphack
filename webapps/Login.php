@@ -98,7 +98,7 @@
                     </div>
                     <dl class="user-input">
                         <dt>ID（メールアドレス）</dt>
-                        <dd><input type="text" name="id" class="add"></dd>
+                        <dd><input type="text" name="id" class="add" maxlength="254"></dd>
                         <dt>パスワード</dt>
                         <dd><input id="password" type="password" name="password" class="add"></dd>
                     </dl>
