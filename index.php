@@ -48,7 +48,7 @@
 <body id="top">
 <div class="wrap">
 
-    <header>
+<!--    <header>
         <div class="header-logo custom-header-bg">
             <div class="header-logo_area">
                 <a href="#"><img src="public/img/sebun_logoN.png" alt=""></a>
@@ -59,7 +59,10 @@
             <div class="disp-pc lp-main-images"><img src="public/img/MV.png"></div>
             <div class="disp-sp"><img src="public/img/MV.png"></div>
         </div>
-    </header>
+    </header>-->
+    <?php
+        require_once("webapps/common/header.php");
+    ?>
 
     <div class="main-container lp-area">
         <section class="lp-bg0">
