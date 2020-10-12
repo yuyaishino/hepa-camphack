@@ -89,11 +89,18 @@ function addAndupdateDb($db, $receiveList, $mailer){
     $_SESSION['expireTime'] = CommonTool::getExpireTime("+10 minute");
     if ($insertSuccessTag == 1) {			
     	//送信
-    	$body = $uptData['name_prifix'].$uptData['name_suffix']."様<br />
-                                                  応募用の認証コードです。<br />
-                ".$verificationCode."
-                <br />10分以内に上記認証コードを入力ください。<br />
-        ";
+//    	$body = $uptData['name_prifix'].$uptData['name_suffix']."様<br />
+//                                                  応募用の認証コードです。<br />
+//                ".$verificationCode."
+//                <br />10分以内に上記認証コードを入力ください。<br />
+//        ";
+        $body = '<label>'.  $_SESSION['temp_name_prifix'] . $_SESSION['temp_name_suffix'] .'様</label><br><br>'
+        . ' <label>ヘパリーゼキャンプグッズプレゼントキャンペーン事務局です。</label><br><br>'
+        . ' <label>応募用の認証コードです。</label><br>'
+        . ' <label>"'.$verificationCode.'"</label><br><br>'
+        . ' <label>※10分以内に上記認証コードを入力していただかないと、認証コードが無効となります。</label><br>'    
+        . ' <label>※このメールに心当たりがございませんでしたら、お手数をおかけしますが、削除していただきますようお願いいたします。</label><br>'
+        . ' <label>※このメールの送信アドレスは送信専用となりますので、返信できません。</label><br>';
     	$mailer->sendOne($_SESSION['mail'],$body,'応募用の認証コードです。');
     	
     	

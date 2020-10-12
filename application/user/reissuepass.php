@@ -131,15 +131,26 @@ function addAndupdateDb($db, $receiveData, $mailer){
     	$db->endTransaction(true);
     	
     	//送信
-    	$body = $userRow['name_prifix'].$userRow['name_suffix']."様<br />
-                                                  ワンタイムパスワードを発行いたします。<br />
-                                                 有効時間は10分間です。<br />
-                                                 ログイン後に必ずパスワード変更をお願いいたします。<br />
-                                                 ワンタイムパスワード <br />
-                <b>".$newpassword."</b>
-                <br />です。 <br />
-                                                 心当たりがございませんでしたら、事務局までご連絡ください。<br />
-        ";
+//    	$body = $userRow['name_prifix'].$userRow['name_suffix']."様<br />
+//                                                  ワンタイムパスワードを発行いたします。<br />
+//                                                 有効時間は10分間です。<br />
+//                                                 ログイン後に必ずパスワード変更をお願いいたします。<br />
+//                                                 ワンタイムパスワード <br />
+//                <b>".$newpassword."</b>
+//                <br />です。 <br />
+//                                                 心当たりがございませんでしたら、事務局までご連絡ください。<br />
+//        ";
+        
+        $body = '<label>'.  $_SESSION['temp_name_prifix'] . $_SESSION['temp_name_suffix'] .'様</label><br><br>'
+        . ' <label>ヘパリーゼキャンプグッズプレゼントキャンペーン事務局です。</label><br><br>'
+        . ' <label>ワンタイムパスワードを発行いたします。</label><br>'
+        . ' <label>有効時間は10分間です。</label><br>'
+        . ' <label>ログイン後に必ずパスワード変更をお願いいたします。</label><br><br>'
+        . ' <label>ワンタイムパスワード</label><br>'
+        . ' <label>"'.$newpassword.'"</label><br><br>'        
+        . ' <label>※このメールに心当たりがございませんでしたら、お手数をおかけしますが、下記事務局までお問い合わせください。</label><br>'
+        . ' <label>※このメールの送信アドレスは送信専用となりますので、返信できません。</label><br>';
+        
     	$mailer->sendOne($email,$body,'ワンタイムパスワードを発行いたします。');
     	
         $responseData['status'] = 1;

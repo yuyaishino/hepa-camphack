@@ -130,10 +130,15 @@ function addAndupdateDb($db, $receiveData, $mailer){
     	$db->endTransaction(true);
     	
     	//送信
-    	$body = $itemPostData['name_prifix'].$itemPostData['name_suffix']."様<br />
-                                                  会員情報の変更を受け付けました。<br />
-                                                 心当たりがございませんでしたら、事務局までご連絡ください。<br />
-        ";
+//    	$body = $itemPostData['name_prifix'].$itemPostData['name_suffix']."様<br />
+//                                                  会員情報の変更を受け付けました。<br />
+//                                                 心当たりがございませんでしたら、事務局までご連絡ください。<br />
+//        ";
+        $body = '<label>'.  $_SESSION['temp_name_prifix'] . $_SESSION['temp_name_suffix'] .'様</label><br><br>'
+        . ' <label>ヘパリーゼキャンプグッズプレゼントキャンペーン事務局です。</label><br><br>'
+        . ' <label>会員情報の変更を受け付けました。</label><br><br>'
+        . ' <label>※このメールに心当たりがございませんでしたら、お手数をおかけしますが、下記事務局までお問い合わせください。</label><br>'
+        . ' <label>※このメールの送信アドレスは送信専用となりますので、返信できません。</label><br>';
     	$mailer->sendOne($_SESSION['mail'],$body,'会員情報の変更を受け付けました。');
     	
         $responseData['status'] = 1;

@@ -249,12 +249,19 @@ function handleError($response, $db, $mailer)
     $_SESSION['no_error_point'] = $result['point'];
 
     $_SESSION['v_code'] = CommonTool::randomCode();
-    $body = '<label>'.  $_SESSION['name_prifix'] . $_SESSION['name_suffix'] . '様  </label><br>'
+//    $body = '<label>'.  $_SESSION['name_prifix'] . $_SESSION['name_suffix'] . '様  </label><br>'
+//        . ' <label>シリアル№入力にて3回エラーとなりました。</label><br>'
+//        . ' <label>認証コードの入力が必要となります。下記の認証コードを画面より入力ください。</label><br>'
+//        . ' <label>' . $_SESSION['v_code'] . '</label><br>'
+//        . ' <label> 10分以内に上記認証コードを入力ください。</label><br>';
+    $body = '<label>'.  $_SESSION['temp_name_prifix'] . $_SESSION['temp_name_suffix'] .'様</label><br><br>'
+        . ' <label>ヘパリーゼキャンプグッズプレゼントキャンペーン事務局です。</label><br><br>'
         . ' <label>シリアル№入力にて3回エラーとなりました。</label><br>'
         . ' <label>認証コードの入力が必要となります。下記の認証コードを画面より入力ください。</label><br>'
-        . ' <label>' . $_SESSION['v_code'] . '</label><br>'
-        . ' <label> 10分以内に上記認証コードを入力ください。</label><br>';
-
+        . ' <label>"'.$_SESSION['v_code'].'"</label><br><br>'
+        . ' <label>※10分以内に上記認証コードを入力していただかないと、認証コードが無効となります。</label><br>'    
+        . ' <label>※このメールに心当たりがございませんでしたら、お手数をおかけしますが、削除していただきますようお願いいたします。</label><br>'
+        . ' <label>※このメールの送信アドレスは送信専用となりますので、返信できません。</label><br>';
     $status = $mailer->sendOne( $_SESSION['mail'] , $body, '本人確認用の認証コードです');
 
     if ($status) {

@@ -74,21 +74,33 @@ try{
 
    // header("Location: /webapps/sign/signupcheck.php");
 
-    $url = 'http://'.$_SERVER['HTTP_HOST'].'/webapps/sign/signuplogin.php?id='.$id;
+    $url = 'https://'.$_SERVER['HTTP_HOST'].'/webapps/sign/signuplogin.php?id='.$id;
 
-    $body = '<label>'.  $_SESSION['temp_name_prifix'] . $_SESSION['temp_name_suffix'] .'様</label><br>'
-        . ' <label>まだ登録は完了していません。</label><br>'
-        . '<a href="' .$url . '">・仮登録メールの新規登録用ログイン画面のＵＲＬからログインし、本登録を完了してください</a><br>'
-        . '1時間以内に本登録してください。';
+//    $body = '<label>'.  $_SESSION['temp_name_prifix'] . $_SESSION['temp_name_suffix'] .'様</label><br>'
+//        . ' <label>まだ登録は完了していません。</label><br>'
+//        . '<a href="' .$url . '">・仮登録メールの新規登録用ログイン画面のＵＲＬからログインし、本登録を完了してください</a><br>'
+//        . '1時間以内に本登録してください。';
+    $body = '<label>'.  $_SESSION['temp_name_prifix'] . $_SESSION['temp_name_suffix'] .'様</label><br><br>'
+        . ' <label>ヘパリーゼW×CAMP HACK　厳選キャンプグッズプレゼントキャンペーンに仮登録頂きまして</label><br>'
+        . ' <label>ありがとうございます。</label><br><br>'
+        . ' <label>まだ登録は完了していません。</label><br><br>'
+        . ' <label>下記のＵＲＬにアクセスし、ログインいただいたうえ、本登録を完了してください。</label><br>'
+        . ' <label>▼本登録用ページへアクセス</label><br>'
+        . ' <a href="' .$url . '">"'.$url.'"</a><br><br>'
+        . ' <label>※1時間以内に本登録していただかないと、リンクが無効となります。</label><br>'    
+        . ' <label>※このメールに心当たりがございませんでしたら、お手数をおかけしますが、削除していただきますようお願いいたします。</label><br>'
+        . ' <label>※このメールの送信アドレスは送信専用となりますので、返信できません。</label><br>';
     $status = $mailer->sendOne( $_SESSION['temp_email'] ,$body,'まだ仮登録です');
     
-    $before = date('Y-m-d H:i:s', $_SESSION['beforeTime'][0]) . '.' .$_SESSION['beforeTime'][1];
-    $after = date('Y-m-d H:i:s', $_SESSION['afterTime'][0]) . '.' .$_SESSION['afterTime'][1];
-    $filename = 'C:\Apache24\htdocs\hepa-camphack\logs\php_time.log';
-    $outputString = $before . "\n" .$after;
-    //中身をファイルに書き出します。
-    file_put_contents($filename, $outputString, FILE_APPEND | LOCK_EX);
-
+//    //-----MCS追加(2020/10/12) 削除予定----///
+//    $before = date('Y-m-d H:i:s', $_SESSION['beforeTime'][0]) . '.' .$_SESSION['beforeTime'][1];
+//    $after = date('Y-m-d H:i:s', $_SESSION['afterTime'][0]) . '.' .$_SESSION['afterTime'][1];
+//    $filename = 'C:\Apache24\htdocs\hepa-camphack\logs\php_time.log';
+//    $outputString = $before . "\n" .$after;
+//    //中身をファイルに書き出します。
+//    file_put_contents($filename, $outputString, FILE_APPEND | LOCK_EX);
+//    //-----MCS追加(2020/10/12) 削除予定----///
+    
     $response = array();
     // 清空 SESSION 中保存的临时用户信息
     if($status){
