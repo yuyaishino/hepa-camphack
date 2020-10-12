@@ -38,6 +38,13 @@ if (!session_id()) session_start();
     <link rel="stylesheet" type="text/css" href="../../public/css/fixed_color.css" media="all">
     <link rel="stylesheet" type="text/css" href="../../public/css/loading.css" media="all">
     <link rel="stylesheet" type="text/css" href="../../public/css/font-awesome.css" media="all">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PQZV8LK');</script>
+    <!-- End Google Tag Manager -->
     <!--[if lt IE 9]>
     <script src="/assets/common/js/html5shiv.min.js"></script><![endif]-->
     <!--[if lt IE 9]>
@@ -116,6 +123,10 @@ if (!session_id()) session_start();
 </head>
 
 <body id="top">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQZV8LK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div class="wrap">
 
 <!--    <header>
