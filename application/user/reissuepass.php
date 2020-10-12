@@ -147,7 +147,7 @@ function addAndupdateDb($db, $receiveData, $mailer){
         . ' <label>有効時間は10分間です。</label><br>'
         . ' <label>ログイン後に必ずパスワード変更をお願いいたします。</label><br><br>'
         . ' <label>ワンタイムパスワード</label><br>'
-        . ' <label>"'.$newpassword.'"</label><br><br>'        
+        . ' <label>'.$newpassword.'</label><br><br>'        
         . ' <label>※このメールに心当たりがございませんでしたら、お手数をおかけしますが、下記事務局までお問い合わせください。</label><br>'
         . ' <label>※このメールの送信アドレスは送信専用となりますので、返信できません。</label><br>';
         
