@@ -97,7 +97,7 @@ function addAndupdateDb($db, $receiveList, $mailer){
         $body = '<label>'.  $_SESSION['name_prifix'] . $_SESSION['name_suffix'] .'様</label><br><br>'
         . ' <label>ヘパリーゼキャンプグッズプレゼントキャンペーン事務局です。</label><br><br>'
         . ' <label>応募用の認証コードです。</label><br>'
-        . ' <label>"'.$verificationCode.'"</label><br><br>'
+        . ' <label>'.$verificationCode.'</label><br><br>'
         . ' <label>※10分以内に上記認証コードを入力していただかないと、認証コードが無効となります。</label><br>'    
         . ' <label>※このメールに心当たりがございませんでしたら、お手数をおかけしますが、削除していただきますようお願いいたします。</label><br>'
         . ' <label>※このメールの送信アドレスは送信専用となりますので、返信できません。</label><br>';
