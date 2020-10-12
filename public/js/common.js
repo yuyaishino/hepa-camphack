@@ -717,7 +717,17 @@ function isPassword(str) {
         return false;
     }
 }
-
+/**
+ *  数字
+ */
+function isNumber(str) {
+    rep = /^[0-9]+$/
+    if (rep.test(str)) {
+        return true;
+    } else {
+        return false;
+    }
+}
 /**
  * 半角数字4桁
  */

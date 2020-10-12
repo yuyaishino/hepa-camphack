@@ -1423,6 +1423,18 @@ WHERE del_flg = '0'
         }
     }
 
+    /**
+     *  数字
+     */
+    public static function isNumber($str)
+    {
+    	if (preg_match('/^[0-9]+$/', $str) == 1) {
+    		return true;
+    	} else {
+    		return false;
+    	}
+    }
+    
     private static $str = '0123456789';
 
     public static function randomCode()

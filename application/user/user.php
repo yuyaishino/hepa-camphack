@@ -205,7 +205,7 @@ function checkAddPostMainData($params){
 	if(CommonTool::isNullOREmpty($params['postcode'])){
 		throw new SysException('I0006', '', '');
 	}
-	if(!CommonTool::isHalfAngle($params['postcode']) || strlen($params['postcode'])!=7){
+	if(!CommonTool::isNumber($params['postcode']) || strlen($params['postcode'])!=7){
 		throw new SysException('I0006', '', '');
 	}
 	if(CommonTool::isNullOREmpty($params['address1'])){
@@ -214,7 +214,7 @@ function checkAddPostMainData($params){
 	if(CommonTool::isNullOREmpty($params['tel'])){
 		throw new SysException('I0007', '', '');
 	}
-	if(!CommonTool::isHalfAngle($params['tel']) || (strlen($params['tel']) != 11 && strlen($params['tel']) != 10)){
+	if(!CommonTool::isNumber($params['tel']) || (strlen($params['tel']) != 11 && strlen($params['tel']) != 10)){
 		throw new SysException('I0007', '', '');
 	}
 }

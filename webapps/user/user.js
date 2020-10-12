@@ -191,7 +191,7 @@ function checkDate(updateData){
 		showPop(checkErrorMessage);
 		return false;
 	}
-	if(!isHalfAngle(updateData.postcode) || updateData.postcode.length != 7){
+	if(!isNumber(updateData.postcode) || updateData.postcode.length != 7){
 		changeUserflag = true;
 		checkErrorMessage = getMessage('Message.I0006');
 		showPop(checkErrorMessage);
@@ -209,7 +209,7 @@ function checkDate(updateData){
 		showPop(checkErrorMessage);
 		return false;
 	}
-	if(!isHalfAngle(updateData.tel) || (updateData.tel.length != 11 && updateData.tel.length != 10)){
+	if(!isNumber(updateData.tel) || (updateData.tel.length != 11 && updateData.tel.length != 10)){
 		changeUserflag = true;
 		checkErrorMessage = getMessage('Message.I0007');
 		showPop(checkErrorMessage);
