@@ -87,7 +87,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="btn-list-area">
         <a class="btn-link btn btn-yel" id="pword_change" href="#">パスワード変更</a>
         <hr>
-        <a class="btn-link btn btn-red" href="../../application/Logout.php">ログアウト</a>
+        <a class="btn-link btn btn-red" href="./mypage.php">マイページ</a>
       </div>
     </section>
   </div>
