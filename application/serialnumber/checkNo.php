@@ -254,7 +254,7 @@ function handleError($response, $db, $mailer)
 //        . ' <label>認証コードの入力が必要となります。下記の認証コードを画面より入力ください。</label><br>'
 //        . ' <label>' . $_SESSION['v_code'] . '</label><br>'
 //        . ' <label> 10分以内に上記認証コードを入力ください。</label><br>';
-    $body = '<label>'.  $_SESSION['temp_name_prifix'] . $_SESSION['temp_name_suffix'] .'様</label><br><br>'
+    $body = '<label>'.  $_SESSION['name_prifix'] . $_SESSION['name_suffix'] .'様</label><br><br>'
         . ' <label>ヘパリーゼキャンプグッズプレゼントキャンペーン事務局です。</label><br><br>'
         . ' <label>シリアル№入力にて3回エラーとなりました。</label><br>'
         . ' <label>認証コードの入力が必要となります。下記の認証コードを画面より入力ください。</label><br>'

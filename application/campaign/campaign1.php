@@ -94,7 +94,7 @@ function addAndupdateDb($db, $receiveList, $mailer){
 //                ".$verificationCode."
 //                <br />10分以内に上記認証コードを入力ください。<br />
 //        ";
-        $body = '<label>'.  $_SESSION['temp_name_prifix'] . $_SESSION['temp_name_suffix'] .'様</label><br><br>'
+        $body = '<label>'.  $_SESSION['name_prifix'] . $_SESSION['name_suffix'] .'様</label><br><br>'
         . ' <label>ヘパリーゼキャンプグッズプレゼントキャンペーン事務局です。</label><br><br>'
         . ' <label>応募用の認証コードです。</label><br>'
         . ' <label>"'.$verificationCode.'"</label><br><br>'

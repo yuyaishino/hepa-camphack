@@ -122,7 +122,7 @@ function addAndupdateDb($db, $receiveData, $mailer){
 //                                                  パスワード変更を受け付けました。<br />
 //                                                 心当たりがございませんでしたら、事務局までご連絡ください。<br />
 //        ";
-        $body = '<label>'.  $_SESSION['temp_name_prifix'] . $_SESSION['temp_name_suffix'] .'様</label><br><br>'
+        $body = '<label>'.  $_SESSION['name_prifix'] . $_SESSION['name_suffix'] .'様</label><br><br>'
         . ' <label>ヘパリーゼキャンプグッズプレゼントキャンペーン事務局です。</label><br><br>'
         . ' <label>パスワード変更を受け付けました。</label><br><br>'
         . ' <label>※このメールに心当たりがございませんでしたら、お手数をおかけしますが、下記事務局までお問い合わせください。</label><br>'
