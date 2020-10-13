@@ -130,16 +130,23 @@ require_once("../../application/common/db/dbini.php");
                     }
 
                     console.log(dataArray);
-
+                    var html = '';
+                    html ="<dt>賞品</dt><dd><span class='date'>日付</span><span>口数</span></dd>";
+                    $('.mypage-select').append(html);
                     // A 赏
-                    var html ='';
+                    html = '';
                     if(dataArray[0].length > 0){
-                        for(var i = 0 ; i < dataArray[0].length; i++){
-                            for(var j = 0 ;  j < dataArray[0][i].apply_count; j++){
-                                html += '<dt>' + dataArray[0][i].typeStr + '</dt>' +
-                                    '<dd>' + dataArray[0][i].time + '</dd>';
-                            }
-                        }
+                        
+                        html += '<dt>' + dataArray[0][0].typeStr + '</dt>' +
+                                    '<dd><span class="date">' + dataArray[0][0].time + '</span>' + 
+                                    '<span>' + dataArray[0][0].apply_count + '口</span></dd>'; 
+                        
+//                        for(var i = 0 ; i < dataArray[0].length; i++){
+//                            for(var j = 0 ;  j < dataArray[0][i].apply_count; j++){
+//                                html += '<dt>' + dataArray[0][i].typeStr + '</dt>' +
+//                                    '<dd>' + dataArray[0][i].time + '</dd>';
+//                            }
+//                        }
                     } else {
                         html = '<dt>A賞</dt>' +
                             '<dd>ございません。</dd>';
@@ -150,20 +157,34 @@ require_once("../../application/common/db/dbini.php");
                     html ='';
                     if(dataArray[1].length > 0){
                         for(var i = 0 ; i < dataArray[1].length; i++){
-                            for(var j = 0 ;  j < dataArray[1][i].apply_count; j++){
-                                if(dataArray[1][i].color == 1){
-                                    html += ' <dt>B賞</dt>\n' +
-                                        '                            <dd>' +
-                                        '                            <p>ミリタリーグリーン&nbsp;&nbsp;' + dataArray[1][i].time + '</p>\n' +
-                                        '                            </dd>';
-                                } else if (dataArray[1][i].color == 2){
-                                    html += ' <dt>B賞</dt>\n' +
-                                        '                            <dd>\n' +
-                                        '                            <p>グレー&nbsp;&nbsp;' + dataArray[1][i].time + '</p>\n' +
-                                        '                            </dd>';
-                                }
+                            if(dataArray[1][i].color == 1){
+                                html += ' <dt>B賞</dt>\n' +
+                                    '<dd>' +
+                                    '   <p><span class="color">ミリタリーグリーン&nbsp;&nbsp;</span><span class="colordate">' + dataArray[1][0].time + '</span><span class="num">' + dataArray[1][0].apply_count + '口</span></p>\n' +
+                                    '</dd>';
+                            } else if (dataArray[1][i].color == 2){
+                                html += ' <dt>B賞</dt>\n' +
+                                    '<dd>\n' +
+                                    '   <p><span class="date">グレー&nbsp;&nbsp;' + dataArray[1][0].time + '</span><span>' + dataArray[1][0].apply_count + '口</span></p>\n' +
+                                    '</dd>';
                             }
+                            
                         }
+//                        for(var i = 0 ; i < dataArray[1].length; i++){
+//                            for(var j = 0 ;  j < dataArray[1][i].apply_count; j++){
+//                                if(dataArray[1][i].color == 1){
+//                                    html += ' <dt>B賞</dt>\n' +
+//                                        '                            <dd>' +
+//                                        '                            <p>ミリタリーグリーン&nbsp;&nbsp;' + dataArray[1][i].time + '</p>\n' +
+//                                        '                            </dd>';
+//                                } else if (dataArray[1][i].color == 2){
+//                                    html += ' <dt>B賞</dt>\n' +
+//                                        '                            <dd>\n' +
+//                                        '                            <p>グレー&nbsp;&nbsp;' + dataArray[1][i].time + '</p>\n' +
+//                                        '                            </dd>';
+//                                }
+//                            }
+//                        }
                     } else {
                         html = '<dt>B賞</dt>' +
                             '<dd>ございません。</dd>';
@@ -174,12 +195,15 @@ require_once("../../application/common/db/dbini.php");
                     // C 赏
                     html ='';
                     if(dataArray[2].length > 0){
-                        for(var i = 0 ; i < dataArray[2].length; i++){
-                            for(var j = 0 ; j < dataArray[2][i].apply_count; j++){
-                                html += '<dt>' + dataArray[2][i].typeStr + '</dt>' +
-                                    '<dd>' + dataArray[2][i].time + '</dd>';
-                            }
-                        }
+                     html += '<dt>' + dataArray[2][0].typeStr + '</dt>' +
+                                    '<dd><span class="date">' + dataArray[2][0].time + '</span>' + 
+                                    '<span>' + dataArray[2][0].apply_count + '口</span></dd>'; 
+//                        for(var i = 0 ; i < dataArray[2].length; i++){
+//                            for(var j = 0 ; j < dataArray[2][i].apply_count; j++){
+//                                html += '<dt>' + dataArray[2][i].typeStr + '</dt>' +
+//                                    '<dd>' + dataArray[2][i].time + '</dd>';
+//                            }
+//                        }
                     } else {
                         html = '<dt>C賞</dt>' +
                             '<dd>ございません。</dd>';
@@ -190,12 +214,15 @@ require_once("../../application/common/db/dbini.php");
                     // D 赏
                     html ='';
                     if(dataArray[3].length > 0){
-                        for(var i = 0 ; i < dataArray[3].length; i++){
-                            for(var j = 0 ; j < dataArray[3][i].apply_count; j++){
-                                html += '<dt>' + dataArray[3][i].typeStr + '</dt>' +
-                                    '<dd>' + dataArray[3][i].time + '</dd>';
-                            }
-                        }
+                         html += '<dt>' + dataArray[3][0].typeStr + '</dt>' +
+                                    '<dd><span class="date">' + dataArray[3][0].time + '</span>' + 
+                                    '<span>' + dataArray[3][0].apply_count + '口</span></dd>'; 
+//                        for(var i = 0 ; i < dataArray[3].length; i++){
+//                            for(var j = 0 ; j < dataArray[3][i].apply_count; j++){
+//                                html += '<dt>' + dataArray[3][i].typeStr + '</dt>' +
+//                                    '<dd>' + dataArray[3][i].time + '</dd>';
+//                            }
+//                        }
                     } else {
                         html = '<dt>D賞</dt>' +
                             '<dd>ございません。</dd>';
@@ -205,12 +232,15 @@ require_once("../../application/common/db/dbini.php");
                     // E 赏
                     html ='';
                     if(dataArray[4].length > 0){
-                        for(var i = 0 ; i < dataArray[4].length; i++){
-                            for(var j = 0 ; j < dataArray[4][i].apply_count; j++){
-                                html += '<dt>' + dataArray[4][i].typeStr + '</dt>' +
-                                    '<dd>' + dataArray[4][i].time + '</dd>';
-                            }
-                        }
+                         html += '<dt>' + dataArray[4][0].typeStr + '</dt>' +
+                                    '<dd><span class="date">' + dataArray[4][0].time + '</span>' + 
+                                    '<span>' + dataArray[4][0].apply_count + '口</span></dd>'; 
+//                        for(var i = 0 ; i < dataArray[4].length; i++){
+//                            for(var j = 0 ; j < dataArray[4][i].apply_count; j++){
+//                                html += '<dt>' + dataArray[4][i].typeStr + '</dt>' +
+//                                    '<dd>' + dataArray[4][i].time + '</dd>';
+//                            }
+//                        }
                     } else {
                         html = '<dt>E賞</dt>' +
                             '<dd>ございません。</dd>';
@@ -258,26 +288,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h2>マイページ</h2>
                 <div class="mypage-name"></div>
                 <div class="point_block applylsit-page">現在のポイント　<span class="point-namber">0</span>pt</div>
+                <p class="mypage-name-p">応募状況</p>
                 <dl class="mypage-select">
-<!--                    <dt>A賞</dt>-->
-<!--                    <dd>2020/10/30</dd>-->
-<!--                    <dt>B賞</dt>-->
-<!--                    <dd>-->
-<!--                        <p>ミリタリーグリーン：2020/10/30</p>-->
-<!--                        <p>シルバー：ございません。</p>-->
-<!--                    </dd>-->
-<!--                    <dt>C賞</dt>-->
-<!--                    <dd>ございません。</dd>-->
-<!--                    <dt>D賞</dt>-->
-<!--                    <dd>ございません。</dd>-->
-<!--                    <dt>E賞</dt>-->
-<!--                    <dd>2020/10/30</dd>-->
+<!--                    <dt>賞品</dt>
+                    <dd><span class="date">日付</span><span>口数</span></dd>
+                    <dt>A賞</dt>
+                    <dd><span class="date">2020/10/30</span><span>99999口</span></dd>
+                    <dt>B賞</dt>
+                    <dd>
+                        <p>ミリタリーグリーン：2020/10/30</p><span>99999口</span>
+                        <p>シルバー：ございません。</p><span>99999口</span>
+                        <p><span class="date">ミリタリーグリーン：2020/10/30</span><span>99999口</span></p>
+                        <p><span class="date">シルバー：ございません。</span><span>99999口</span></p>
+                    </dd>
+                    <dt>C賞</dt>
+                    <dd>ございません。</dd>
+                    <dt>D賞</dt>
+                    <dd>ございません。</dd>
+                    <dt>E賞</dt>
+                    <dd>2020/10/30</dd>-->
                 </dl>
                 <div class="btn-list-area">
-                    <a class="btn-link btn btn-yel" href="../campaign/campaign1.php">応募する</a>
-                    <a class="btn-link btn btn-yel" href="userinfo.php">会員情報</a>
-                    <a class="btn-link btn btn-yel" href="password.php">パスワード変更</a>
                     <a class="btn-link btn btn-yel" href="../serialnumber/serialnumber1.php">シリアルNo.入力</a>
+                    <a class="btn-link btn btn-yel" href="../campaign/campaign1.php">応募する</a>
+                    <a class="btn-link btn btn-yel" href="userinfo.php">会員情報・変更</a>
+                    <a class="btn-link btn btn-yel" href="password.php">パスワード変更</a>
                     <hr>
                     <a class="btn-link btn btn-red" href="../../application/Logout.php">ログアウト</a>
                 </div>

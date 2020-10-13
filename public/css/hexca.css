@@ -398,6 +398,25 @@ ul.center {
   margin-bottom: 5px;
   border-bottom: 1px dotted #999;
 }
+/*************マイページ 2020/10/13追加***************/
+.mypage-select .date{
+    display: inline-block;
+    width: 20em;
+}
+.mypage-select .color,.mypage-select .colordate{
+    display: inline-block;
+    width: 10em;
+}
+.mypage-name-p{
+    width: 100%;
+    max-width: 760px;
+    margin: 0px auto 0px;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+}
+/*************マイページ 2020/10/13追加***************/
 .mypage-select dd:last-child{
   margin-bottom: 0;
   border-bottom: none;
@@ -405,6 +424,14 @@ ul.center {
 @media (max-width: 767px) {
   .mypage-name { font-size: 20px; }
   .mypage-select { font-size: 15px; }
+  .mypage-name-p{font-size: 17px;}
+  .mypage-select .date{display: inline-block;
+    width: 10em;}
+  .mypage-select .color{display: block;
+    width: 10em;}
+  .mypage-select .colordate{display: block;
+    width: 10em; float: left}
+  .mypage-select .num{display: inline-block;}
 }
 
 
