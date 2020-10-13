@@ -293,7 +293,11 @@ function showData(data){
 	 $('input[name="name_suffix"]').val(data.name_suffix);
 	 $('input[name="notation_prifix"]').val(data.notation_prifix);
 	 $('input[name="notation_sufix"]').val(data.notation_sufix);
-	 $("#year").val(data.year);
+         if(data.year === undefined){
+             $("#year").val("1980");
+         }else{
+             $("#year").val(data.year);
+         }
 	 $("#month").val(data.month);
 	 $("#day").val(data.day);
 	 $('input[name="postcode"]').val(data.postcode);
