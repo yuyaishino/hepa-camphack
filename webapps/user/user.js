@@ -9,6 +9,11 @@ function goGrant(){
 }
 
 $(function() {
+
+    $("#year").click(function(){
+        //alert(1);
+        $("#aa").select(); // フォーカスを当てる
+    });
 	searchData();
 	$("#changeUser").click(function(){
 		if(changeUserflag){
@@ -185,36 +190,41 @@ function checkDate(updateData){
 		showPop(checkErrorMessage);
 		return false;
 	}
-	if(isNullOrEmpty(updateData.postcode)){
+//	if(isNullOrEmpty(updateData.postcode)){
+//		changeUserflag = true;
+//		checkErrorMessage = getMessage('Message.I0006');
+//		showPop(checkErrorMessage);
+//		return false;
+//	}
+        if(!isNullOrEmpty(updateData.postcode)){
+            if(!isNumber(updateData.postcode) || updateData.postcode.length != 7){
 		changeUserflag = true;
 		checkErrorMessage = getMessage('Message.I0006');
 		showPop(checkErrorMessage);
 		return false;
-	}
-	if(!isNumber(updateData.postcode) || updateData.postcode.length != 7){
-		changeUserflag = true;
-		checkErrorMessage = getMessage('Message.I0006');
-		showPop(checkErrorMessage);
-		return false;
-	}
-	if(isNullOrEmpty(updateData.address1)){
-		changeUserflag = true;
-		checkErrorMessage = getMessage('Message.I0022');
-		showPop(checkErrorMessage);
-		return false;
-	}
-	if(isNullOrEmpty(updateData.tel)){
-		changeUserflag = true;
-		checkErrorMessage = getMessage('Message.I0007');
-		showPop(checkErrorMessage);
-		return false;
-	}
-	if(!isNumber(updateData.tel) || (updateData.tel.length != 11 && updateData.tel.length != 10)){
-		changeUserflag = true;
-		checkErrorMessage = getMessage('Message.I0007');
-		showPop(checkErrorMessage);
-		return false;
-	}
+            }
+        }
+	
+//	if(isNullOrEmpty(updateData.address1)){
+//		changeUserflag = true;
+//		checkErrorMessage = getMessage('Message.I0022');
+//		showPop(checkErrorMessage);
+//		return false;
+//	}
+//	if(isNullOrEmpty(updateData.tel)){
+//		changeUserflag = true;
+//		checkErrorMessage = getMessage('Message.I0007');
+//		showPop(checkErrorMessage);
+//		return false;
+//	}
+        if(!isNullOrEmpty(updateData.tel)){
+            if(!isNumber(updateData.tel) || (updateData.tel.length != 11 && updateData.tel.length != 10)){
+                    changeUserflag = true;
+                    checkErrorMessage = getMessage('Message.I0007');
+                    showPop(checkErrorMessage);
+                    return false;
+            }
+        }
 	return flag;
 }
 
