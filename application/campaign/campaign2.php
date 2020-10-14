@@ -65,7 +65,8 @@ try {
 function searchData($db)
 {
 	if(isset($_SESSION['isRecruit']) && $_SESSION['isRecruit'] == "point"){
-		header("Location: /webapps/user/user.php");
+//		header("Location: /webapps/user/user.php");
+                header("Location: /webapps/user/mypage.php");
 	}
 	//$verificationCode = $_SESSION['verificationCode'];
 	$receiveList = $_SESSION['campaign'];
