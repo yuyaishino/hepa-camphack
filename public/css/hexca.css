@@ -412,9 +412,13 @@ ul.center {
     display: inline-block;
     width: 20em;
 }
-.mypage-select .color,.mypage-select .colordate{
+.mypage-select .colordate{
     display: inline-block;
-    width: 10em;
+    width: 7em;
+}
+.mypage-select .color{
+    display: inline-block;
+    width: 13em;
 }
 .mypage-name-p{
     width: 100%;
@@ -437,9 +441,9 @@ ul.center {
   .mypage-select .date{display: inline-block;
     width: 10em;}
   .mypage-select .color{display: block;
-    width: 10em;}
+    width: 10em;float: left;}
   .mypage-select .colordate{display: block;
-    width: 10em; float: left}
+    width: 10em;}
   .mypage-select .num{display: inline-block;}
 }
 
