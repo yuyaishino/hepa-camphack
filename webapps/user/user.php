@@ -86,34 +86,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <select name="month" id="month"> <option value="">-</option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option> <option value="10">10</option> <option value="11">11</option> <option value="12">12</option> </select> 月　
           <select name="day" id="day"> <option value="">-</option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option> <option value="10">10</option> <option value="11">11</option> <option value="12">12</option> <option value="13">13</option> <option value="14">14</option> <option value="15">15</option> <option value="16">16</option> <option value="17">17</option> <option value="18">18</option> <option value="19">19</option> <option value="20">20</option> <option value="21">21</option> <option value="22">22</option> <option value="23">23</option> <option value="24">24</option> <option value="25">25</option> <option value="26">26</option> <option value="27">27</option> <option value="28">28</option> <option value="29">29</option> <option value="30">30</option> <option value="31">31</option> </select> 日
         </dd>
-<!--        <dt>郵便番号</dt>
-        <dd><input type="text" class="zip" name="postcode" maxlength="7" placeholder="※ハイフン不要・半角数字">　<input type="button" id="postcode_button" value="郵便番号→住所"></dd>-->
-        <dt style="width: 5em;float: left;">郵便番号</dt>
+        <dt>郵便番号</dt>
+        <dd><input type="text" class="zip" name="postcode" maxlength="7" placeholder="※ハイフン不要・半角数字">　<input type="button" id="postcode_button" value="郵便番号→住所"></dd>
+<!--        <dt style="width: 5em;float: left;">郵便番号</dt>
         <dd style="margin-bottom: 0px;padding: 0px 0 5px 0em;">(入力例:1030024) ※ハイフン不要・半角数字</dd>
-        <dd><input type="text" class="zip" name="postcode" maxlength="7">　<input type="button" id="postcode_button" value="郵便番号→住所"></dd>
+        <dd><input type="text" class="zip" name="postcode" maxlength="7">　<input type="button" id="postcode_button" value="郵便番号→住所"></dd>-->
 
-        <dt style="width: 5em;float: left;">住所1</dt>
-<!--        <dd style="margin-bottom: 0px;padding: 0px 0 5px 0em;">(入力例:東京都中央区日本橋小舟町)</dd>-->
-<!--        <dd><input type="text" class="add" name="address1" maxlength="40" placeholder="(入力例:東京都中央区日本橋小舟町)"></dd>-->
-        <dd style="margin-bottom: 0px;padding: 0px 0 5px 0em;">(入力例:東京都中央区日本橋小舟町)</dd>
-        <dd><input type="text" class="add" name="address1" maxlength="40"></dd>
+        <dt>住所1</dt>
+        <dd><input type="text" class="add" name="address1" maxlength="40" placeholder="(入力例:東京都中央区日本橋小舟町)"></dd>
+<!--        <dd style="margin-bottom: 0px;padding: 0px 0 5px 0em;">(入力例:東京都中央区日本橋小舟町)</dd>
+        <dd><input type="text" class="add" name="address1" maxlength="40"></dd>-->
         
-        <dt style="width: 5em;float: left;">住所2</dt>
-<!--        <dd style="margin-bottom: 0px;padding: 0px 0 5px 0em;">(入力例:10-11)</dd>-->
-<!--        <dd><input type="text" class="add" name="address2" maxlength="40" placeholder="(入力例:10-11)"></dd>-->
-        <dd style="margin-bottom: 0px;padding: 0px 0 5px 0em;">(入力例:10-11)</dd>
-        <dd><input type="text" class="add" name="address2" maxlength="40" ></dd>
-        <dt style="width: 5em;float: left;">住所3</dt>
-<!--        <dd style="margin-bottom: 0px;padding: 0px 0 5px 0em;">(入力例:ゼリアマンション101)</dd>-->
-<!--        <dd><input type="text" class="add" name="address3" maxlength="40" placeholder="(入力例:ゼリアマンション101)"></dd>-->
-        <dd style="margin-bottom: 0px;padding: 0px 0 5px 0em;">(入力例:ゼリアマンション101)</dd>
-        <dd><input type="text" class="add" name="address3" maxlength="40" ></dd>
-<!--        <dt>電話番号</dt>
-        <dd><input type="tel" name="tel" maxlength="15" placeholder="※ハイフン不要・半角数字"></dd>-->
-<!--    <dd style="margin-bottom: 0px;padding: 0px 0 5px 0em;">(入力例:1030024) ※ハイフン不要・半角数字</dd>-->
-        <dt style="width: 5em;float: left;">電話番号</dt>
+        <dt>住所2</dt>
+        <dd><input type="text" class="add" name="address2" maxlength="40" placeholder="(入力例:10-11)"></dd>
+<!--        <dd style="margin-bottom: 0px;padding: 0px 0 5px 0em;">(入力例:10-11)</dd>
+        <dd><input type="text" class="add" name="address2" maxlength="40" ></dd>-->
+        <dt>住所3</dt>
+        <dd><input type="text" class="add" name="address3" maxlength="40" placeholder="(入力例:ゼリアマンション101)"></dd>
+        
+<!--        <dd style="margin-bottom: 0px;padding: 0px 0 5px 0em;">(入力例:ゼリアマンション101)</dd>
+        <dd><input type="text" class="add" name="address3" maxlength="40" ></dd>-->
+        <dt>電話番号</dt>
+        <dd><input type="tel" name="tel" maxlength="15" placeholder="※ハイフン不要・半角数字"></dd>
+<!--        <dt style="width: 5em;float: left;">電話番号</dt>
         <dd style="margin-bottom: 0px;padding: 0px 0 5px 0em;">(入力例:1030024) ※ハイフン不要・半角数字</dd>
-        <dd><input type="tel" name="tel" maxlength="15"></dd>
+        <dd><input type="tel" name="tel" maxlength="15"></dd>-->
         <dt>性別</dt>
         <dd><label><input type="radio" name="sec" value="0" checked="checked">男性</label>　<label><input type="radio" name="sec" value="1">女性</label></dd>
       </dl>
