@@ -193,11 +193,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                    value="<?= array_key_exists('temp_email', $_SESSION) ? $_SESSION['temp_email'] : '' ?>" maxlength="254">
                         </dd>
                         <dt>パスワード</dt>
-                        <dd><input id="password" name="password" type="password" class="add"
+                        <dd><input id="password" name="password" type="password" class="add" placeholder="半角英数字6～20桁"
                                    value="<?= array_key_exists('temp_password', $_SESSION) ? $_SESSION['temp_password'] : '' ?>">
                         </dd>
                         <dt>パスワード（確認用）</dt>
-                        <dd><input id="re-password" type="password" class="add"
+                        <dd><input id="re-password" type="password" class="add" placeholder="半角英数字6～20桁"
                                    value="<?= array_key_exists('temp_password', $_SESSION) ? $_SESSION['temp_password'] : '' ?>">
                         </dd>
                         <dt>氏名</dt>

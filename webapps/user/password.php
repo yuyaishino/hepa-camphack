@@ -76,12 +76,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <dd id="email" maxlength="254"></dd>
         <dt>パスワード</dt>
         <dd>
-        <input type="password" id="npassword" >
+        <input type="password" id="npassword" placeholder="半角英数字6～20桁">
         <input type="hidden" id="update_time" />
         </dd>
         <dt>パスワード（確認用）</dt>
         <dd>
-            <input type="password" id="cpassword" >
+            <input type="password" id="cpassword" placeholder="半角英数字6～20桁" >
         </dd>
       </dl>
       <div class="btn-list-area">

@@ -138,7 +138,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <dd><input name="email" type="text" class="add" maxlength="30"></dd>
                         <dt>パスワード</dt>
                         <dd>
-                            <input id="password" name="password" type="password" class="add">
+                            <input id="password" name="password" type="password" class="add" placeholder="半角英数字6～20桁">
                         </dd>
                     </dl>
                     <div class="btn-list-area">

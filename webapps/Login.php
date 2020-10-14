@@ -113,7 +113,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <dt>ID（メールアドレス）</dt>
                         <dd><input type="text" name="id" class="add" maxlength="254"></dd>
                         <dt>パスワード</dt>
-                        <dd><input id="password" type="password" name="password" class="add"></dd>
+                        <dd><input id="password" type="password" name="password" class="add" placeholder="半角英数字6～20桁"></dd>
                     </dl>
                     <div class="btn-list-area">
                         <a class="btn-link btn btn-yel" onclick="dologin()" style="cursor:pointer">ログイン</a>
