@@ -77,10 +77,10 @@ function addAndUpdate(verificationCode){
          success: function (data) {
         	 /*
              console.log(data);*/
-             if(data.status == 1){
+             if(data.status == 1 || data.status == 2){
             	 window.location.href="../user/mypage.php"; 
-             }else if(data.status == 2){
-            	 window.location.href="../user/user.php"; 
+//             }else if(data.status == 2){
+//            	 window.location.href="../user/user.php"; 
              } else if(data.status == 403){
 				 window.location.href="../Login.php";
 			 } else {
