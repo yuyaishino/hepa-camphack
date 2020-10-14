@@ -77,7 +77,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="main-container lp-area">
         <section class="lp-bg0">
-            <p class="text-b1 t-center">セブン-イレブンでヘパリーゼWシリーズを買って、ポイントを貯めよう！<br>抽選でCAMP HACK編集部が厳選する<br>キャンプグッズ等が当たるプレゼントキャンペーンを実施！
+            <p class="text-b1 t-center">セブン-イレブンで<span style="background-color: #FFCC00;">ヘパリーゼW</span>シリーズを買って、ポイントを貯めよう！<br>
+                <span style="background-color: #FFCC00;">抽選</span>で<span style="background-color: #FFCC00;">CAMP HACK</span>編集部が厳選する<br>
+                キャンプグッズ等が当たるプレゼントキャンペーンを実施！
+            </p>
+            <br>
+            <p class="text-b1 t-center"><span style="background-color: #FFCC00;">税率91円<sup>*</sup>または税込み100円</span>
+                お買い上げごとに<span style="background-color: #FFCC00;">1ポイント</span>獲得！<br>
+                <span style="background-color: #FFCC00;">厳選キャンプグッズが当たる！</span>
             </p>
             <br>
             <p class="text-b2 t-center">利用規約に同意の上、<br>初めて参加の場合は「新規登録」ボタンよりマイページを作成してください。<br>すでにマイページをお持ちの場合は<br>「ログイン」ボタンよりポイントを貯めてご応募ください。
@@ -91,13 +98,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </section>
         <section class="lp-bg1">
             <h2>キャンペーン対象期間</h2>
-            <p class="text-b1 t-center">10月20日(火)～11月9日(月) 23:59</p>
+<!--            <p class="text-b1 t-center">10月20日(火)～11月9日(月) 23:59</p>
             <ul class="center text-b2">
                 <li>※応募期間は11月11日(水)19:00までとなります。</li>
                 <li>※商品発送期間は11月下旬を予定しております。</li>
+            </ul>-->
+            <p class="text-b1 t-center">実施期間:10月20日(火)～11月9日(月)</p>
+            <p class="text-b1 t-center">応募締切:11月11日(水)19:00</p>
+            <ul class="center text-b2">
+                <li>※商品発送期間は12月上旬を予定しております。</li>
             </ul>
             <div class="btn-list-area">
-                <a class="btn-link btn btn-yel" href="#P01">商品紹介はこちら</a>
+                <a class="btn-link btn btn-yel" href="#P01">厳選キャンプグッズはこちら</a>
                 <a class="btn-link btn btn-yel" href="#P02">応募方法はこちら</a>
                 <a class="btn-link btn btn-yel" href="#P03">対象商品はこちら</a>
             </div>
@@ -110,6 +122,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <li class="freebie-list"><img src="public/img/freebie-c.png" alt="C賞"></li>
                 <li class="freebie-list"><img src="public/img/freebie-d.png" alt="D賞"></li>
                 <li class="freebie-list"><img src="public/img/freebie-e.png" alt="E賞"></li>
+                <li class="freebie-list">
+                    <a class="btn-link btn btn-yel btn-camp" href="http://www.hepa.jp/">CAMP HACK公式HPで<br>賞品を詳しく紹介中！</a>
+                </li>
             </ul>
         </section>
         <section class="lp-bg0" id="P02">

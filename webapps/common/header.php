@@ -6,6 +6,6 @@ echo "<header>
             </div>
         </div>
         <h1></h1>
-        <img src='public/img/main.png' alt=''>
+        <img src='public/img/main.jpg' alt=''>
     </header>";
 
