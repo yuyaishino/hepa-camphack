@@ -137,16 +137,15 @@ require_once("../../application/common/db/dbini.php");
                     html = '';
                     if(dataArray[0].length > 0){
                         
-                        html += '<dt>' + dataArray[0][0].typeStr + '</dt>' +
-                                    '<dd><span class="date">' + dataArray[0][0].time + '</span>' + 
-                                    '<span>' + dataArray[0][0].apply_count + '口</span></dd>'; 
+//                        html += '<dt>' + dataArray[0][0].typeStr + '</dt>' +
+//                                    '<dd><span class="date">' + dataArray[0][0].time + '</span>' + 
+//                                    '<span>' + dataArray[0][0].apply_count + '口</span></dd>'; 
                         
-//                        for(var i = 0 ; i < dataArray[0].length; i++){
-//                            for(var j = 0 ;  j < dataArray[0][i].apply_count; j++){
-//                                html += '<dt>' + dataArray[0][i].typeStr + '</dt>' +
-//                                    '<dd>' + dataArray[0][i].time + '</dd>';
-//                            }
-//                        }
+                        for(var i = 0 ; i < dataArray[0].length; i++){
+                            html += '<dt>' + dataArray[0][i].typeStr + '</dt>' +
+                                '<dd><span class="date">' + dataArray[0][i].time + '</span>' + 
+                                    '<span>' + dataArray[0][i].apply_count + '口</span></dd>'; 
+                        }
                     } else {
                         html = '<dt>A賞</dt>' +
                             '<dd>ございません。</dd>';
@@ -156,20 +155,20 @@ require_once("../../application/common/db/dbini.php");
                     // B 赏
                     html ='';
                     if(dataArray[1].length > 0){
-                        for(var i = 0 ; i < dataArray[1].length; i++){
-                            if(dataArray[1][i].color == 1){
-                                html += ' <dt>B賞</dt>\n' +
-                                    '<dd>' +
-                                    '   <p><span class="color">ミリタリーグリーン&nbsp;&nbsp;</span><span class="colordate">' + dataArray[1][0].time + '</span><span class="num">' + dataArray[1][0].apply_count + '口</span></p>\n' +
-                                    '</dd>';
-                            } else if (dataArray[1][i].color == 2){
-                                html += ' <dt>B賞</dt>\n' +
-                                    '<dd>\n' +
-                                    '   <p><span class="date">グレー&nbsp;&nbsp;' + dataArray[1][0].time + '</span><span>' + dataArray[1][0].apply_count + '口</span></p>\n' +
-                                    '</dd>';
-                            }
-                            
-                        }
+//                        for(var i = 0 ; i < dataArray[1].length; i++){
+//                            if(dataArray[1][i].color == 1){
+//                                html += ' <dt>B賞</dt>\n' +
+//                                    '<dd>' +
+//                                    '   <p><span class="color">ミリタリーグリーン&nbsp;&nbsp;</span><span class="colordate">' + dataArray[1][0].time + '</span><span class="num">' + dataArray[1][0].apply_count + '口</span></p>\n' +
+//                                    '</dd>';
+//                            } else if (dataArray[1][i].color == 2){
+//                                html += ' <dt>B賞</dt>\n' +
+//                                    '<dd>\n' +
+//                                    '   <p><span class="date">グレー&nbsp;&nbsp;' + dataArray[1][0].time + '</span><span>' + dataArray[1][0].apply_count + '口</span></p>\n' +
+//                                    '</dd>';
+//                            }
+//                            
+//                        }
 //                        for(var i = 0 ; i < dataArray[1].length; i++){
 //                            for(var j = 0 ;  j < dataArray[1][i].apply_count; j++){
 //                                if(dataArray[1][i].color == 1){
@@ -185,6 +184,19 @@ require_once("../../application/common/db/dbini.php");
 //                                }
 //                            }
 //                        }
+                        for(var i = 0 ; i < dataArray[1].length; i++){
+                            if(dataArray[1][i].color == 1){
+                                html += ' <dt>B賞</dt>\n' +
+                                    '<dd>' +
+                                    '   <p><span class="color">ミリタリーグリーン&nbsp;&nbsp;</span><span class="colordate">' + dataArray[1][i].time + '</span><span class="num">' + dataArray[1][i].apply_count + '口</span></p>\n' +
+                                    '</dd>';
+                            } else if (dataArray[1][i].color == 2){
+                                html += ' <dt>B賞</dt>\n' +
+                                    '<dd>\n' +
+                                    '   <p><span class="date">グレー&nbsp;&nbsp;' + dataArray[1][i].time + '</span><span>' + dataArray[1][i].apply_count + '口</span></p>\n' +
+                                    '</dd>';
+                            }
+                        }
                     } else {
                         html = '<dt>B賞</dt>' +
                             '<dd>ございません。</dd>';
@@ -195,15 +207,20 @@ require_once("../../application/common/db/dbini.php");
                     // C 赏
                     html ='';
                     if(dataArray[2].length > 0){
-                     html += '<dt>' + dataArray[2][0].typeStr + '</dt>' +
-                                    '<dd><span class="date">' + dataArray[2][0].time + '</span>' + 
-                                    '<span>' + dataArray[2][0].apply_count + '口</span></dd>'; 
+//                     html += '<dt>' + dataArray[2][0].typeStr + '</dt>' +
+//                                    '<dd><span class="date">' + dataArray[2][0].time + '</span>' + 
+//                                    '<span>' + dataArray[2][0].apply_count + '口</span></dd>'; 
 //                        for(var i = 0 ; i < dataArray[2].length; i++){
 //                            for(var j = 0 ; j < dataArray[2][i].apply_count; j++){
 //                                html += '<dt>' + dataArray[2][i].typeStr + '</dt>' +
 //                                    '<dd>' + dataArray[2][i].time + '</dd>';
 //                            }
 //                        }
+                        for(var i = 0 ; i < dataArray[2].length; i++){
+                            html += '<dt>' + dataArray[2][i].typeStr + '</dt>' +
+                                '<dd><span class="date">' + dataArray[2][i].time + '</span>' + 
+                                    '<span>' + dataArray[2][i].apply_count + '口</span></dd>'; 
+                        }
                     } else {
                         html = '<dt>C賞</dt>' +
                             '<dd>ございません。</dd>';
@@ -214,15 +231,20 @@ require_once("../../application/common/db/dbini.php");
                     // D 赏
                     html ='';
                     if(dataArray[3].length > 0){
-                         html += '<dt>' + dataArray[3][0].typeStr + '</dt>' +
-                                    '<dd><span class="date">' + dataArray[3][0].time + '</span>' + 
-                                    '<span>' + dataArray[3][0].apply_count + '口</span></dd>'; 
+//                         html += '<dt>' + dataArray[3][0].typeStr + '</dt>' +
+//                                    '<dd><span class="date">' + dataArray[3][0].time + '</span>' + 
+//                                    '<span>' + dataArray[3][0].apply_count + '口</span></dd>'; 
 //                        for(var i = 0 ; i < dataArray[3].length; i++){
 //                            for(var j = 0 ; j < dataArray[3][i].apply_count; j++){
 //                                html += '<dt>' + dataArray[3][i].typeStr + '</dt>' +
 //                                    '<dd>' + dataArray[3][i].time + '</dd>';
 //                            }
 //                        }
+                        for(var i = 0 ; i < dataArray[3].length; i++){
+                            html += '<dt>' + dataArray[3][i].typeStr + '</dt>' +
+                                '<dd><span class="date">' + dataArray[3][i].time + '</span>' + 
+                                    '<span>' + dataArray[3][i].apply_count + '口</span></dd>'; 
+                        }
                     } else {
                         html = '<dt>D賞</dt>' +
                             '<dd>ございません。</dd>';
@@ -232,15 +254,20 @@ require_once("../../application/common/db/dbini.php");
                     // E 赏
                     html ='';
                     if(dataArray[4].length > 0){
-                         html += '<dt>' + dataArray[4][0].typeStr + '</dt>' +
-                                    '<dd><span class="date">' + dataArray[4][0].time + '</span>' + 
-                                    '<span>' + dataArray[4][0].apply_count + '口</span></dd>'; 
+//                         html += '<dt>' + dataArray[4][0].typeStr + '</dt>' +
+//                                    '<dd><span class="date">' + dataArray[4][0].time + '</span>' + 
+//                                    '<span>' + dataArray[4][0].apply_count + '口</span></dd>'; 
 //                        for(var i = 0 ; i < dataArray[4].length; i++){
 //                            for(var j = 0 ; j < dataArray[4][i].apply_count; j++){
 //                                html += '<dt>' + dataArray[4][i].typeStr + '</dt>' +
 //                                    '<dd>' + dataArray[4][i].time + '</dd>';
 //                            }
 //                        }
+                        for(var i = 0 ; i < dataArray[4].length; i++){
+                            html += '<dt>' + dataArray[4][i].typeStr + '</dt>' +
+                                '<dd><span class="date">' + dataArray[4][i].time + '</span>' + 
+                                    '<span>' + dataArray[4][i].apply_count + '口</span></dd>'; 
+                        }
                     } else {
                         html = '<dt>E賞</dt>' +
                             '<dd>ございません。</dd>';

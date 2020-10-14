@@ -36,8 +36,8 @@ try{
     $responseData['name_suffix'] = $result['name_suffix'];
 
 
-//    $sql = "SELECT * FROM apply WHERE user_id = '" . $id . "' ORDER BY type,time";
-    $sql = "SELECT user_id,type,sum(apply_count) as apply_count,max(time) as time, color FROM apply WHERE user_id = '" . $id . "' group by type,color  ORDER BY type,time,color ";
+    $sql = "SELECT * FROM apply WHERE user_id = '" . $id . "' ORDER BY type,time";
+//    $sql = "SELECT user_id,type,sum(apply_count) as apply_count,max(time) as time, color FROM apply WHERE user_id = '" . $id . "' group by type,color  ORDER BY type,time,color ";
     $prizeList = $db->getAll($sql);
 
 
