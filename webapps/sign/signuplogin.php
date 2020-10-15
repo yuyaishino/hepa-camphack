@@ -135,10 +135,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <dl class="user-input">
                         <dt>ID（メールアドレス）</dt>
-                        <dd><input name="email" type="text" class="add" maxlength="30"></dd>
+                        <dd><input name="email" type="text" class="add" maxlength="254"></dd>
                         <dt>パスワード</dt>
                         <dd>
-                            <input id="password" name="password" type="password" class="add" placeholder="半角英数字6～20桁">
+                            <input id="password" name="password" type="password" class="add" maxlength="20" placeholder="半角英数字6～20桁">
                         </dd>
                     </dl>
                     <div class="btn-list-area">
