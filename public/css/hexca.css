@@ -355,6 +355,12 @@ ul.center {
   width: 150px;
   vertical-align: middle;
 }
+.select-code input[type="tel"] {
+    padding: 5px;
+    border: 1px solid #959696;
+    width: 150px;
+    vertical-align: middle;
+}
 .serial-code {
   width: 100%;
   max-width: 760px;
@@ -365,6 +371,12 @@ ul.center {
   text-align: center;
 }
 .serial-code input[type="text"] {
+  padding: 5px;
+  border: 1px solid #959696;
+  width: 50px;
+  vertical-align: middle;
+}
+.serial-code input[type="tel"] {
   padding: 5px;
   border: 1px solid #959696;
   width: 50px;

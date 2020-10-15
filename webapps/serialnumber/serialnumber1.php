@@ -223,12 +223,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <form>
                     <div class="serial-code">
                         <p>シリアルNo.</p>
-                        <div class="serial-code-input"><input class="no" name="no1" type="text" maxlength="4"> - <input
+                        <div class="serial-code-input"><input class="no" name="no1" type="tel" maxlength="4"> - <input
                                     class="no" name="no2"
-                                    type="text"
+                                    type="tel"
                                     maxlength="4">
-                            - <input class="no" name="no3" type="text" maxlength="4"> - <input class="no" name="no4"
-                                                                                               type="text"
+                            - <input class="no" name="no3" type="tel" maxlength="4"> - <input class="no" name="no4"
+                                                                                               type="tel"
                                                                                                maxlength="4"></div>
                     </div>
                 </form>

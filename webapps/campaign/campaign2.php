@@ -80,7 +80,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="select-code">
         <p>認証コードを入力してください。</p>
-        <div class="select-code-input">認証コード <input type="text" id="verificationCode" maxlength="4" ></div>
+        <div class="select-code-input">認証コード <input type="tel" id="verificationCode" maxlength="4" ></div>
       </div>
       <div class="btn-list-area">
         <a class="btn-link btn btn-yel" href="#" id="addChange">応募する</a>

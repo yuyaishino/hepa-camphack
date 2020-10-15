@@ -164,7 +164,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="select-code">
                     <p class="error">入力エラーが3回連続して発生したため、登録メールアドレスに認証コードを送信しました。<br>認証コードを入力して本人認証することで、シリアルNo.入力が可能となります。
                     </p>
-                    <div class="select-code-input">認証コード <input id="code" type="text" maxlength="4"></div>
+                    <div class="select-code-input">認証コード <input id="code" type="tel" maxlength="4"></div>
                 </div>
                 <div class="btn-list-area">
                     <a class="btn-link btn btn-yel" onclick="submit()">認証</a>
