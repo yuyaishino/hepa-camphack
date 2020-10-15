@@ -9,7 +9,6 @@
  **/
 
 // セッション共通処理
-//require_once ("../../application/common/comUtils/SessionCheck.php");
 require_once("../common/message/MessageTool.php");
 require_once("../common/Exception/SysException.php");
 require_once("../common/comUtils/CommonTool.class.php");
@@ -17,12 +16,16 @@ require_once '../common/db/dbini.php';
 require_once '../common/db/WorkLogTool.php';
 require_once '../common/PHPMailer/mailerInit.php';
 require_once("../../application/common/db/sessioninit.php");
-
+//require_once ("../../application/common/comUtils/SessionCheck.php");
 try{
 
     $db->startTransaction();
-
-    $where = array('email'=>$_SESSION['temp_email']);
+    if(isset($_SESSION['temp_email'])){
+        $where = array('email'=>$_SESSION['temp_email']);
+    } else {
+        throw new SysException("I0023", '', '');
+    }
+    
     $result = $db->findRow("user",$where);
 
 
