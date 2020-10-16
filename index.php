@@ -116,7 +116,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </section>
         <section class="lp-bg2" id="P01">
-            <h2>商品紹介</h2>
+            <h2>賞品紹介</h2>
             <ul class="freebie-area">
                 <li class="freebie-list"><img src="public/img/freebie-a.png" alt="A賞"></li>
                 <li class="freebie-list"><img src="public/img/freebie-b.png" alt="B賞"></li>
