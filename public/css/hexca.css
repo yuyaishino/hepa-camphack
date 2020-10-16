@@ -513,7 +513,7 @@ ul.center {
 .user-input input[type="text"] {
   padding: 5px;
   border: 1px solid #959696;
-  width: 200px;
+  width: 203px;
 }
 .user-input input[type="text"].name {
   width: 150px;
@@ -543,7 +543,7 @@ ul.center {
   .password-input input[type="text"] { width: 100%; }
   .user-input dt { width: 100%; float: none; clear: none; }
   .user-input dd { padding: 0; }
-  .user-input input[type="text"] { width: 150px; }
+  .user-input input[type="text"] { width: 170px; }
   .user-input input[type="text"].name { width: 40%; }
 }
 

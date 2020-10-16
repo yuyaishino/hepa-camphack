@@ -106,10 +106,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="text-b1 t-center">実施期間:10月20日(火)～11月9日(月)</p>
             <p class="text-b1 t-center">応募締切:11月11日(水)19:00</p>
             <ul class="center text-b2">
-                <li>※商品発送期間は12月上旬を予定しております。</li>
+                <li>※賞品(A賞～D賞)発送期間は12月上旬を予定しております。</li>
+                <li>※E賞のクーポンコードは11月中旬にご登録のメールアドレスに送付を予定しております。</li>
             </ul>
             <div class="btn-list-area">
-                <a class="btn-link btn btn-yel" href="#P01">厳選キャンプグッズはこちら</a>
+                <a class="btn-link btn btn-yel" href="#P01">厳選キャンプグッズ等はこちら</a>
                 <a class="btn-link btn btn-yel" href="#P02">応募方法はこちら</a>
                 <a class="btn-link btn btn-yel" href="#P03">対象商品はこちら</a>
             </div>
