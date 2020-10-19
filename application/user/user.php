@@ -215,21 +215,27 @@ function checkAddPostMainData($params){
 	if(!CommonTool::checkDateIsValid($data)){
 		throw new SysException('I0005', '', '');
 	}
-	if(CommonTool::isNullOREmpty($params['postcode'])){
+//	if(CommonTool::isNullOREmpty($params['postcode'])){
+//		throw new SysException('I0006', '', '');
+//	}
+        if(!CommonTool::isNullOREmpty($params['postcode'])){
+            if(!CommonTool::isNumber($params['postcode']) || strlen($params['postcode'])!=7){
 		throw new SysException('I0006', '', '');
-	}
-	if(!CommonTool::isNumber($params['postcode']) || strlen($params['postcode'])!=7){
-		throw new SysException('I0006', '', '');
-	}
-	if(CommonTool::isNullOREmpty($params['address1'])){
-		throw new SysException('I0022', '', '');
-	}
-	if(CommonTool::isNullOREmpty($params['tel'])){
+            }
+        }
+	
+//	if(CommonTool::isNullOREmpty($params['address1'])){
+//		throw new SysException('I0022', '', '');
+//	}
+//	if(CommonTool::isNullOREmpty($params['tel'])){
+//		throw new SysException('I0007', '', '');
+//	}
+        if(!CommonTool::isNullOREmpty($params['tel'])){
+            if(!CommonTool::isNumber($params['tel']) || (strlen($params['tel']) != 11 && strlen($params['tel']) != 10)){
 		throw new SysException('I0007', '', '');
-	}
-	if(!CommonTool::isNumber($params['tel']) || (strlen($params['tel']) != 11 && strlen($params['tel']) != 10)){
-		throw new SysException('I0007', '', '');
-	}
+            }
+        }
+	
 }
 
 function sessionRecruit($db,$curr_dttm){

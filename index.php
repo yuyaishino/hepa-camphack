@@ -124,7 +124,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <li class="freebie-list"><img src="public/img/freebie-d.png" alt="D賞"></li>
                 <li class="freebie-list"><img src="public/img/freebie-e.png" alt="E賞"></li>
                 <li class="freebie-list">
-                    <a class="btn-link btn btn-yel btn-camp" href="http://www.hepa.jp/" target="_blank">CAMP HACK公式HPで<br>賞品を詳しく紹介中！</a>
+                    <a class="btn-link btn btn-yel btn-camp" href="https://camphack.nap-camp.com/6308" target="_blank">CAMP HACK公式HPで<br>賞品を詳しく紹介中！</a>
                 </li>
             </ul>
         </section>

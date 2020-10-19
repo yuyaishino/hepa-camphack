@@ -308,8 +308,16 @@ function showData(data){
          }else{
              $("#year").val(data.year);
          }
-	 $("#month").val(data.month);
-	 $("#day").val(data.day);
+         if(data.year === undefined){
+             $("#month").val("1");
+         }else{
+             $("#month").val(data.month);
+         }
+         if(data.year === undefined){
+             $("#day").val("1");
+         }else{
+             $("#day").val(data.day);
+         }
 	 $('input[name="postcode"]').val(data.postcode);
 	 $('input[name="address1"]').val(data.address1);
 	 $('input[name="address2"]').val(data.address2);

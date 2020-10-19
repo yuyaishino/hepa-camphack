@@ -79,7 +79,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="item-select"><input type="hidden" id="update_time" />
         <div class="item-select-item">
           <div class="title">A賞（10名様）</div>
-          <div class="image"><img src="../../public/img/pfreebie-a.png" alt="[DOD] キノコテント"></div>
+          <div class="image"><img src="../../public/img/freebie-a.png" alt="[DOD] キノコテント"></div>
           <div class="name">[DOD] キノコテント</div>
           <div class="point">20ポイント/1口</div>
           <div>数量：<input type="text" id="a_count" data_type="a" value="0" oninput="value=(value.replace(/\D/g,'')==''?'':parseInt(value))" maxlength="10"> 
@@ -88,7 +88,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="item-select-item">
           <div class="title">B賞（各色5名様）</div>
-          <div class="image"><img src="../../public/img/pfreebie-b.png" alt="[Oregonian Camper] YAVIN 53（ツールボックス）"></div>
+          <div class="image"><img src="../../public/img/freebie-b.png" alt="[Oregonian Camper] YAVIN 53（ツールボックス）"></div>
           <div class="name">[Oregonian Camper] YAVIN 53（ツールボックス）</div>
           <div class="point">15ポイント/1口</div>
           <div>数量：<input type="text" id="b_count1" data_type="b" color_type="1" value="0" oninput="value=(value.replace(/\D/g,'')==''?'':parseInt(value))" maxlength="10"> 
@@ -100,7 +100,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="item-select-item">
           <div class="title">C賞（50名様）</div>
-          <div class="image"><img src="../../public/img/pfreebie-c.png" alt="[DOD] うさサンドメーカー"></div>
+          <div class="image"><img src="../../public/img/freebie-c.png" alt="[DOD] うさサンドメーカー"></div>
           <div class="name">[DOD] うさサンドメーカー</div>
           <div class="point">10ポイント/1口</div>
           <div>数量：<input type="text" id="c_count" data_type="c" value="0" oninput="value=(value.replace(/\D/g,'')==''?'':parseInt(value))" maxlength="10">
@@ -109,7 +109,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="item-select-item">
           <div class="title">D賞（2,000名様）</div>
-          <div class="image"><img src="../../public/img/pfreebie-d.png" alt="[キャプテンスタッグ] CAMP HACKロゴ入りオリジナルシェラカップ"></div>
+          <div class="image"><img src="../../public/img/freebie-d.png" alt="[キャプテンスタッグ] CAMP HACKロゴ入りオリジナルシェラカップ"></div>
           <div class="name">[キャプテンスタッグ] CAMP HACKロゴ入りオリジナルシェラカップ</div>
           <div class="point">2ポイント/1口</div>
           <div>数量：<input type="text" id="d_count" data_type="d" value="0" oninput="value=(value.replace(/\D/g,'')==''?'':parseInt(value))" maxlength="10">
@@ -118,7 +118,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="item-select-item">
           <div class="title">E賞（20,000名様）</div>
-          <div class="image"><img src="../../public/img/pfreebie-e.png" alt="ヘパリーゼW粒 引換券"></div>
+          <div class="image"><img src="../../public/img/freebie-e.png" alt="ヘパリーゼW粒 引換券"></div>
           <div class="name">ヘパリーゼW粒 引換券</div>
           <div class="point">1ポイント/1口</div>
           <div>数量：<input type="text" id="e_count" data_type="e" value="0" oninput="value=(value.replace(/\D/g,'')==''?'':parseInt(value))" maxlength="10">
