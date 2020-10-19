@@ -8,7 +8,7 @@ echo '<footer>
         <div class="contact-info custom-footer-bg custom-footer-font">
             <dl>
                 <dt>ヘパリーゼキャンプグッズプレゼントキャンペーン事務局</dt>
-                <dd>TEL：<a href="tel:0120-785-173" style="color: blue;">0120-785-173</a>　受付時間：9:00～17:00</dd>
+                <dd>TEL：<a href="tel:0120-785-173" style="color: blue;">0120-785-173</a>　受付時間：10:00～17:00</dd>
                 <dd>※2020年11月11日（水）のみ19:00まで</dd>
                 <dd>受付期間：2020年12月18日(金)まで</dd>
                 <dd>※上記の受付時間外は、</dd>
