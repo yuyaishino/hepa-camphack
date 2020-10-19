@@ -10,10 +10,6 @@ function goGrant(){
 
 $(function() {
 
-    $("#year").click(function(){
-        //alert(1);
-        $("#aa").select(); // フォーカスを当てる
-    });
 	searchData();
 	$("#changeUser").click(function(){
 		if(changeUserflag){
@@ -161,35 +157,43 @@ function checkDate(updateData){
 		showPop(checkErrorMessage);
 		return false;
 	}
-	if(isNullOrEmpty(updateData.year) || isNullOrEmpty(updateData.month) || isNullOrEmpty(updateData.day)){
+        if(isNullOrEmpty(updateData.year) && isNullOrEmpty(updateData.month) && isNullOrEmpty(updateData.day)){
+            
+        }else{
+            
+            if(isNullOrEmpty(updateData.year) || isNullOrEmpty(updateData.month) || isNullOrEmpty(updateData.day)){
 		changeUserflag = true;
 		checkErrorMessage = getMessage('Message.I0005');
 		showPop(checkErrorMessage);
 		return false;
-	}
-	if(updateData.year <= 1930 || updateData.year >= 2021){
-		changeUserflag = true;
-		checkErrorMessage = getMessage('Message.I0005');
-		showPop(checkErrorMessage);
-		return false;
-	}
-	var datestr = updateData.year;
-	if(updateData.month < 10){
-		datestr = datestr + "-0" + updateData.month;
-	}else{
-		datestr = datestr + "-" + updateData.month;
-	}
-	if(updateData.day < 10){
-		datestr = datestr + "-0" + updateData.day;
-	}else{
-		datestr = datestr + "-" + updateData.day;
-	}
-	if (!checkDateIsValid(datestr)){
-		changeUserflag = true;
-		checkErrorMessage = getMessage('Message.I0005');
-		showPop(checkErrorMessage);
-		return false;
-	}
+            }
+
+            if(updateData.year <= 1930 || updateData.year >= 2021){
+                    changeUserflag = true;
+                    checkErrorMessage = getMessage('Message.I0005');
+                    showPop(checkErrorMessage);
+                    return false;
+            }
+            var datestr = updateData.year;
+            if(updateData.month < 10){
+                    datestr = datestr + "-0" + updateData.month;
+            }else{
+                    datestr = datestr + "-" + updateData.month;
+            }
+            if(updateData.day < 10){
+                    datestr = datestr + "-0" + updateData.day;
+            }else{
+                    datestr = datestr + "-" + updateData.day;
+            }
+            if (!checkDateIsValid(datestr)){
+                    changeUserflag = true;
+                    checkErrorMessage = getMessage('Message.I0005');
+                    showPop(checkErrorMessage);
+                    return false;
+            }
+        }
+	
+        
 //	if(isNullOrEmpty(updateData.postcode)){
 //		changeUserflag = true;
 //		checkErrorMessage = getMessage('Message.I0006');
