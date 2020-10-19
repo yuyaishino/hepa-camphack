@@ -142,11 +142,12 @@ function addAndupdateDb($db, $receiveData, $mailer){
         . ' <br><br><label>-----------------------------------------------------------------------------------------------------</label><br>'
         . ' <label>お問い合わせ</label><br>'
         . ' <label>ヘパリーゼキャンプグッズプレゼントキャンペーン事務局</label><br>'
-        . ' <label>受付時間：9:00～17:00　※2020年11月11日（水）のみ19:00まで</label><br>'
+        . ' <label>TEL：0120-785-173 </label><br>'
+        . ' <label>受付時間：10:00～17:00　※2020年11月11日（水）のみ19:00まで</label><br>'
         . ' <label>受付期間：2020年12月18日(金)まで</label><br>'
         . ' <label>※上記の受付時間外は、inquiry@hepa-camphack-campaign.comでも</label><br>'
         . ' <label>　お問い合わせを承っております。</label><br>'
-        . ' <label>-----------------------------------------------------------------------------------------------------</label>';        
+        . ' <label>-----------------------------------------------------------------------------------------------------</label>';     
     	$mailer->sendOne($_SESSION['mail'],$body,'会員情報の変更を受け付けました。');
     	
         $responseData['status'] = 1;
@@ -197,24 +198,26 @@ function checkAddPostMainData($params){
 	if(!CommonTool::isZenKatakana($params['notation_sufix'])){
 		throw new SysException('I0021', '', '');
 	}
-	
-	
-	if(CommonTool::isNullOREmpty($params['year']) || CommonTool::isNullOREmpty($params['month']) || CommonTool::isNullOREmpty($params['day'])){
-		throw new SysException('I0005', '', '');
-	}
-	if($params['year'] <= 1930 || $params['year'] >= 2021){
-		throw new SysException('I0005', '', '');
-	}
-	if($params['month'] < 10){
-		$params['month'] = "0".$params['month'];
-	}
-	if($params['day'] < 10){
-		$params['day'] = "0".$params['day'];
-	}
-	$data = $params['year']."-".$params['month']."-".$params['day'];
-	if(!CommonTool::checkDateIsValid($data)){
-		throw new SysException('I0005', '', '');
-	}
+	if(CommonTool::isNullOREmpty($params['year']) && CommonTool::isNullOREmpty($params['month']) && CommonTool::isNullOREmpty($params['day'])){
+
+	}else{
+            if(CommonTool::isNullOREmpty($params['year']) || CommonTool::isNullOREmpty($params['month']) || CommonTool::isNullOREmpty($params['day'])){
+                    throw new SysException('I0005', '', '');
+            }
+            if($params['year'] <= 1930 || $params['year'] >= 2021){
+                    throw new SysException('I0005', '', '');
+            }
+            if($params['month'] < 10){
+                    $params['month'] = "0".$params['month'];
+            }
+            if($params['day'] < 10){
+                    $params['day'] = "0".$params['day'];
+            }
+            $data = $params['year']."-".$params['month']."-".$params['day'];
+            if(!CommonTool::checkDateIsValid($data)){
+                    throw new SysException('I0005', '', '');
+            }
+        }
 //	if(CommonTool::isNullOREmpty($params['postcode'])){
 //		throw new SysException('I0006', '', '');
 //	}
