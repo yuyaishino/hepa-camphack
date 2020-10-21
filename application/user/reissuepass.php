@@ -141,7 +141,7 @@ function addAndupdateDb($db, $receiveData, $mailer){
 //                                                 心当たりがございませんでしたら、事務局までご連絡ください。<br />
 //        ";
         
-        $body = '<label>'.  $_SESSION['name_prifix'] . $_SESSION['name_suffix'] .'様</label><br><br>'
+        $body = '<label>'.  $userRow['name_prifix'] . $userRow['name_suffix'] .'様</label><br><br>'
         . ' <label>ヘパリーゼキャンプグッズプレゼントキャンペーン事務局です。</label><br><br>'
         . ' <label>ワンタイムパスワードを発行いたします。</label><br>'
         . ' <label>有効時間は10分間です。</label><br>'
