@@ -79,6 +79,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>が選ばれています。</p>
       </div>
       <div class="select-code">
+        <p>ご登録頂ているメールアドレスに認証コードを送信しました。</p>  
         <p>認証コードを入力してください。</p>
         <div class="select-code-input">認証コード <input type="tel" id="verificationCode" maxlength="4" ></div>
       </div>
