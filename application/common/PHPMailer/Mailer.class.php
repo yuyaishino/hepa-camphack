@@ -62,7 +62,7 @@ class Mailer
      *  发送 HTML
      * @param $body
      */
-    public function sendOne($address,$body,$subject){
+    public function sendOne($address,$body,$subject, $field = ""){
         $this->initMail();
         self::$mail->isHTML(true);
         self::$mail->addAddress($address);
@@ -75,8 +75,14 @@ class Mailer
         //送信直後の時間を計測
         $aftertime = explode('.',microtime(true));
         $_SESSION['afterTime'] = $aftertime;
+        
+        $date = date("Y-m-d H:i:s", $aftertime[0]);
+        
         if(!$status){
-            error_log(self::$mail ->ErrorInfo . "\n",3,$GLOBALS['error_log_path']);
+            error_log($date. " " . self::$mail ->ErrorInfo ." ".$field. "\n",3,$GLOBALS['error_log_path']);
+        }
+        else{
+            error_log($date. " " . $address ." ".$field. "\n",3,$GLOBALS['send_log_path']);
         }
         return $status;
     }
