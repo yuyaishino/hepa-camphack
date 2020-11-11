@@ -142,7 +142,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </dd>
                     </dl>
                     <div class="btn-list-area">
-                        <a class="btn-link btn btn-yel" onclick="login()">ログイン</a>
+<!--                        <a class="btn-link btn btn-yel" onclick="login()">ログイン</a>-->
                         <hr>
                         <a class="btn-link btn btn-red" href="../../index.php">トップ画面</a>
                     </div>

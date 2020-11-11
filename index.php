@@ -92,7 +92,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="consent"><input type="checkbox" value="同意する"><a href="#terms">利用規約</a>に同意する。</div>
             <p style="text-align: center;font-size: 12px;font-weight: bold;">※利用規約に同意いただけない場合は新規登録・ログインいただくことができません。</p>
             <div class="btn-list-area">
-                <a class="btn-link btn btn-red" onclick="signup()">新規登録</a>
+<!--                <a class="btn-link btn btn-red" onclick="signup()">新規登録</a>-->
                 <a class="btn-link btn btn-red" href="webapps/Login.php">ログイン</a>
             </div>
         </section>
@@ -183,9 +183,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </ul>
             </div>
             <div class="btn-list-area">
-                <div class="consent"><input type="checkbox" value="同意する"><a href="#terms">利用規約</a>に同意する。</div>
+<!--                <div class="consent"><input type="checkbox" value="同意する"><a href="#terms">利用規約</a>に同意する。</div>
                 
-                <a class="btn-link btn btn-red" onclick="signup()">新規登録</a>
+                <a class="btn-link btn btn-red" onclick="signup()" disabled>新規登録</a>-->
                 <a class="btn-link btn btn-red" href="webapps/Login.php">ログイン</a>
                 <p style="text-align: center;font-size: 12px;font-weight: bold;">※利用規約に同意いただけない場合は新規登録・ログインいただくことができません。</p>
             </div>

@@ -236,7 +236,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="point_block check" style="margin: 0 auto 0px">半角数字16桁の入力をお願い致します。</div>
                 <div class="point_block check">3回連続して入力エラーとなった場合、本人認証が必要となります。</div>
                 <div class="btn-list-area">
-                    <a class="btn-link btn btn-yel" onclick="submit()">登録</a>
+<!--                    <a class="btn-link btn btn-yel" onclick="submit()">登録</a>-->
                     <hr>
                     <a class="btn-link btn btn-red" href="../user/mypage.php">マイページ</a>
                     <a class="btn-link btn btn-red" href="../../application/Logout.php">ログアウト</a>

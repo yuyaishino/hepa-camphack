@@ -335,8 +335,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <dd>2020/10/30</dd>-->
                 </dl>
                 <div class="btn-list-area">
-                    <a class="btn-link btn btn-yel" href="../serialnumber/serialnumber1.php">シリアルNo.入力</a>
-                    <a class="btn-link btn btn-yel" href="../campaign/campaign1.php">応募する</a>
+<!--                    <a class="btn-link btn btn-yel" href="../serialnumber/serialnumber1.php">シリアルNo.入力</a>
+                    <a class="btn-link btn btn-yel" href="../campaign/campaign1.php">応募する</a>-->
                     <a class="btn-link btn btn-yel" href="userinfo.php">会員情報・変更</a>
                     <a class="btn-link btn btn-yel" href="password.php">パスワード変更</a>
                     <hr>

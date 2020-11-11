@@ -167,7 +167,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="select-code-input">認証コード <input id="code" type="tel" maxlength="4"></div>
                 </div>
                 <div class="btn-list-area">
-                    <a class="btn-link btn btn-yel" onclick="submit()">認証</a>
+<!--                    <a class="btn-link btn btn-yel" onclick="submit()">認証</a>-->
                     <hr>
                     <a class="btn-link btn btn-red" href="../user/mypage.php">マイページ</a>
                     <a class="btn-link btn btn-red" href="../../application/Logout.php">ログアウト</a>
